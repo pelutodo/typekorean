@@ -1,513 +1,513 @@
-korean,english
-안녕하세요,hello
-안녕,hi
-감사합니다,thank you
-고마워,thanks
-죄송합니다,sorry
-미안해,sorry
-네,yes
-아니요,no
-물,water
-사과,apple
-집,house
-학교,school
-친구,friend
-사랑,love
-좋아하다,to like
-먹다,to eat
-보다,to see
-가다,to go
-오다,to come
-하다,to do
-있다,to exist
-없다,to not exist
-좋다,good
-나쁘다,bad
-크다,big
-작다,small
-많다,many
-적다,few
-새로운,new
-오래된,old
-예쁘다,pretty
-아름답다,beautiful
-행복하다,happy
-슬프다,sad
-힘들다,difficult
-쉽다,easy
-빠르다,fast
-느리다,slow
-따뜻하다,warm
-차갑다,cold
-덥다,hot
-시원하다,cool
-맛있다,delicious
-맛없다,not delicious
-배고프다,hungry
-목마르다,thirsty
-피곤하다,tired
-졸리다,sleepy
-기쁘다,glad
-화나다,angry
-무섭다,scary
-재미있다,fun
-지루하다,boring
-중요하다,important
-필요하다,necessary
-가능하다,possible
-불가능하다,impossible
-맞다,correct
-틀리다,wrong
-같다,same
-다르다,different
-비슷하다,similar
-가깝다,close
-멀다,far
-높다,high
-낮다,low
-길다,long
-짧다,short
-넓다,wide
-좁다,narrow
-깊다,deep
-얕다,shallow
-무겁다,heavy
-가볍다,light
-딱딱하다,hard
-부드럽다,soft
-밝다,bright
-어둡다,dark
-조용하다,quiet
-시끄럽다,noisy
-깨끗하다,clean
-더럽다,dirty
-건강하다,healthy
-아프다,sick
-부자,rich
-가난하다,poor
-똑똑하다,smart
-바보,stupid
-친절하다,kind
-무례하다,rude
-용감하다,brave
-정직하다,honest
-용서하다,forgive
-도와주다,help
-사과하다,apologize
-감사하다,thankful
-축하하다,congratulate
-만나다,meet
-만들다,make
-사용하다,use
-원하다,want
-싫어하다,dislike
-사랑하다,love
-미워하다,hate
-생각하다,think
-알다,know
-모르다,not know
-기억하다,remember
-잊다,forget
-배우다,learn
-가르치다,teach
-읽다,read
-쓰다,write
-듣다,listen
-말하다,speak
-이야기하다,talk
-질문하다,ask
-대답하다,answer
-물어보다,ask
-알려주다,tell
-설명하다,explain
-이해하다,understand
-시작하다,start
-끝나다,finish
-계속하다,continue
-멈추다,stop
-기다리다,wait
-서두르다,hurry
-늦다,late
-일찍,early
-빨리,quickly
-천천히,slowly
-자주,often
-가끔,sometimes
-항상,always
-절대,never
-오늘,today
-어제,yesterday
-내일,tomorrow
-지금,now
-나중에,later
-이전에,before
-이후에,after
-아침,morning
-점심,lunch
-저녁,evening
-밤,night
-시간,time
-날짜,date
-요일,day of week
-월,month
-년,year
-시,hour
-분,minute
-초,second
-월요일,Monday
-화요일,Tuesday
-수요일,Wednesday
-목요일,Thursday
-금요일,Friday
-토요일,Saturday
-일요일,Sunday
-일월,January
-이월,February
-삼월,March
-사월,April
-오월,May
-유월,June
-칠월,July
-팔월,August
-구월,September
-시월,October
-십일월,November
-십이월,December
-사람,person
-남자,man
-여자,woman
-아이,child
-아기,baby
-학생,student
-선생님,teacher
-의사,doctor
-간호사,nurse
-엄마,mom
-아빠,dad
-형,older brother
-누나,older sister
-오빠,older brother
-언니,older sister
-동생,younger sibling
-남동생,younger brother
-여동생,younger sister
-할아버지,grandfather
-할머니,grandmother
-고양이,cat
-강아지,dog
-새,bird
-물고기,fish
-나무,tree
-꽃,flower
-풀,grass
-하늘,sky
-구름,cloud
-태양,sun
-달,moon
-별,star
-비,rain
-눈,snow
-바람,wind
-번개,lightning
-천둥,thunder
-날씨,weather
-맑다,clear
-흐리다,cloudy
-봄,spring
-여름,summer
-가을,autumn
-겨울,winter
-음식,food
-밥,rice
-국,soup
-고기,meat
-생선,fish
-야채,vegetable
-과일,fruit
-빵,bread
-우유,milk
-차,tea
-커피,coffee
-주스,juice
-맥주,beer
-소주,soju
-김치,kimchi
-불고기,bulgogi
-비빔밥,bibimbap
-김밥,kimbap
-라면,ramen
-떡볶이,tteokbokki
-치킨,chicken
-피자,pizza
-햄버거,hamburger
-과자,snack
-사탕,candy
-초콜릿,chocolate
-아이스크림,ice cream
-케이크,cake
-바나나,banana
-오렌지,orange
-포도,grape
-딸기,strawberry
-수박,watermelon
-복숭아,peach
-배,pear
-체리,cherry
-키위,kiwi
-파인애플,pineapple
-망고,mango
-레몬,lemon
-당근,carrot
-양파,onion
-마늘,garlic
-감자,potato
-고구마,sweet potato
-토마토,tomato
-오이,cucumber
-상추,lettuce
-배추,cabbage
-브로콜리,broccoli
-버섯,mushroom
-고추,pepper
-옷,clothes
-셔츠,shirt
-바지,pants
-치마,skirt
-드레스,dress
-재킷,jacket
-코트,coat
-모자,hat
-신발,shoes
-부츠,boots
-양말,socks
-장갑,gloves
-스카프,scarf
-가방,bag
-지갑,wallet
-시계,watch
-안경,glasses
-귀걸이,earrings
-목걸이,necklace
-반지,ring
-방,room
-침실,bedroom
-거실,living room
-부엌,kitchen
-화장실,bathroom
-욕조,bathtub
-샤워,shower
-침대,bed
-이불,blanket
-베개,pillow
-의자,chair
-테이블,table
-소파,sofa
-책상,desk
-책장,bookshelf
-냉장고,refrigerator
-전자레인지,microwave
-세탁기,washing machine
-청소기,vacuum cleaner
-텔레비전,television
-컴퓨터,computer
-노트북,laptop
-스마트폰,smartphone
-태블릿,tablet
-인터넷,internet
-이메일,email
-메시지,message
-전화,phone
-전화하다,call
-문자,text message
-카메라,camera
-사진,photo
-영화,movie
-음악,music
-노래,song
-책,book
-신문,newspaper
-잡지,magazine
-펜,pen
-연필,pencil
-종이,paper
-가위,scissors
-풀,glue
-자,ruler
-지우개,eraser
-공책,notebook
-대학교,university
-교실,classroom
-도서관,library
-운동장,playground
-교수,professor
-수업,class
-과목,subject
-숙제,homework
-시험,exam
-성적,grade
-공부하다,study
-그리다,draw
-색깔,color
-빨간색,red
-주황색,orange
-노란색,yellow
-초록색,green
-파란색,blue
-보라색,purple
-분홍색,pink
-검은색,black
-흰색,white
-회색,gray
-갈색,brown
-숫자,number
-영,zero
-일,one
-이,two
-삼,three
-사,four
-오,five
-육,six
-칠,seven
-팔,eight
-구,nine
-십,ten
-십일,eleven
-십이,twelve
-이십,twenty
-삼십,thirty
-사십,forty
-오십,fifty
-육십,sixty
-칠십,seventy
-팔십,eighty
-구십,ninety
-백,hundred
-천,thousand
-만,ten thousand
-백만,million
-십억,billion
-첫 번째,first
-두 번째,second
-세 번째,third
-네 번째,fourth
-다섯 번째,fifth
-몇,how many
-얼마,how much
-어디,where
-언제,when
-누구,who
-무엇,what
-어떻게,how
-왜,why
-어느,which
-어떤,what kind
-몇 시,what time
-이것,this
-그것,that
-저것,that
-여기,here
-거기,there
-저기,over there
-이쪽,this way
-그쪽,that way
-저쪽,that way
-모레,day after tomorrow
-그저께,day before yesterday
-이번 주,this week
-지난 주,last week
-다음 주,next week
-이번 달,this month
-지난 달,last month
-다음 달,next month
-올해,this year
-작년,last year
-내년,next year
-요즘,these days
-최근,recently
-예전에,in the past
-곧,soon
-바로,right away
-즉시,immediately
-아까,earlier
-때때로,occasionally
-거의,almost
-전혀,not at all
-이미,already
-아직,yet
-벌써,already
-서둘러,hurry
-여유롭게,leisurely
-조용히,quietly
-시끄럽게,noisily
-크게,loudly
-작게,quietly
-높게,highly
-낮게,lowly
-깊게,deeply
-얕게,shallowly
-넓게,widely
-좁게,narrowly
-길게,longly
-짧게,shortly
-무겁게,heavily
-가볍게,lightly
-딱딱하게,hardly
-부드럽게,softly
-뜨겁게,hotly
-차갑게,coldly
-따뜻하게,warmly
-시원하게,coolly
-밝게,brightly
-어둡게,darkly
-깨끗하게,cleanly
-더럽게,dirtily
-건강하게,healthily
-아프게,sickly
-똑똑하게,smartly
-바보같이,stupidly
-친절하게,kindly
-무례하게,rudely
-용감하게,bravely
-겁쟁이처럼,cowardly
-정직하게,honestly
-거짓말처럼,lyingly
-용서하며,forgivingly
-도와주며,helpfully
-사과하며,apologetically
-감사하며,thankfully
-축하하며,congratulatorily
-만나며,meeting
-만들며,making
-사용하며,using
-필요하며,needing
-원하며,wanting
-좋아하며,liking
-싫어하며,disliking
-사랑하며,loving
-미워하며,hating
-생각하며,thinking
-알며,knowing
-모르며,not knowing
-기억하며,remembering
-잊으며,forgetting
-배우며,learning
-가르치며,teaching
-읽으며,reading
-쓰며,writing
-들으며,listening
-말하며,speaking
-이야기하며,talking
-질문하며,asking
-대답하며,answering
-물어보며,asking
-알려주며,telling
-설명하며,explaining
-이해하며,understanding
-모르며,not understanding
-시작하며,starting
-끝나며,finishing
-계속하며,continuing
-멈추며,stopping
-기다리며,waiting
-서두르며,hurrying
-늦으며,being late
+korean,english,emoji,imageUrl
+안녕하세요,hello,👋,
+안녕,hi,👋,
+감사합니다,thank you,🙏,
+고마워,thanks,🙏,
+죄송합니다,sorry,😔,
+미안해,sorry,😔,
+네,yes,✅,
+아니요,no,❌,
+물,water,💧,
+사과,apple,🍎,
+집,house,🏠,
+학교,school,🏫,
+친구,friend,👫,
+사랑,love,❤️,
+좋아하다,to like,👍,
+먹다,to eat,🍽️,
+보다,to see,👀,
+가다,to go,🚶,
+오다,to come,👋,
+하다,to do,⚙️,
+있다,to exist,✨,
+없다,to not exist,❌,
+좋다,good,👍,
+나쁘다,bad,👎,
+크다,big,🔵,
+작다,small,🔴,
+많다,many,📦,
+적다,few,📉,
+새로운,new,🆕,
+오래된,old,🕰️,
+예쁘다,pretty,💅,
+아름답다,beautiful,✨,
+행복하다,happy,😊,
+슬프다,sad,😢,
+힘들다,difficult,😓,
+쉽다,easy,😎,
+빠르다,fast,⚡,
+느리다,slow,🐌,
+따뜻하다,warm,☀️,
+차갑다,cold,❄️,
+덥다,hot,🔥,
+시원하다,cool,❄️,
+맛있다,delicious,😋,
+맛없다,not delicious,😕,
+배고프다,hungry,🍽️,
+목마르다,thirsty,💧,
+피곤하다,tired,😴,
+졸리다,sleepy,😴,
+기쁘다,glad,😄,
+화나다,angry,😠,
+무섭다,scary,😱,
+재미있다,fun,🎉,
+지루하다,boring,😑,
+중요하다,important,⭐,
+필요하다,necessary,📌,
+가능하다,possible,✅,
+불가능하다,impossible,❌,
+맞다,correct,✅,
+틀리다,wrong,❌,
+같다,same,🔄,
+다르다,different,🔀,
+비슷하다,similar,🔁,
+가깝다,close,📍,
+멀다,far,🗺️,
+높다,high,⬆️,
+낮다,low,⬇️,
+길다,long,📏,
+짧다,short,📐,
+넓다,wide,↔️,
+좁다,narrow,↕️,
+깊다,deep,⬇️,
+얕다,shallow,💧,
+무겁다,heavy,⚖️,
+가볍다,light,💡,
+딱딱하다,hard,💎,
+부드럽다,soft,🪶,
+밝다,bright,☀️,
+어둡다,dark,🌙,
+조용하다,quiet,🤫,
+시끄럽다,noisy,🔊,
+깨끗하다,clean,✨,
+더럽다,dirty,💩,
+건강하다,healthy,💪,
+아프다,sick,🤒,
+부자,rich,💰,
+가난하다,poor,💸,
+똑똑하다,smart,🧠,
+바보,stupid,🤪,
+친절하다,kind,🤗,
+무례하다,rude,😤,
+용감하다,brave,🦁,
+정직하다,honest,🤝,
+용서하다,forgive,🙏,
+도와주다,help,🆘,
+사과하다,apologize,🙇,
+감사하다,thankful,🙏,
+축하하다,congratulate,🎉,
+만나다,meet,🤝,
+만들다,make,🔨,
+사용하다,use,🔧,
+원하다,want,👆,
+싫어하다,dislike,👎,
+사랑하다,love,❤️,
+미워하다,hate,💔,
+생각하다,think,🤔,
+알다,know,🧠,
+모르다,not know,❓,
+기억하다,remember,🧠,
+잊다,forget,🧹,
+배우다,learn,📚,
+가르치다,teach,👨‍🏫,
+읽다,read,📖,
+쓰다,write,✍️,
+듣다,listen,👂,
+말하다,speak,🗣️,
+이야기하다,talk,💬,
+질문하다,ask,❓,
+대답하다,answer,💬,
+물어보다,ask,❓,
+알려주다,tell,📢,
+설명하다,explain,📝,
+이해하다,understand,💡,
+시작하다,start,🚀,
+끝나다,finish,🏁,
+계속하다,continue,▶️,
+멈추다,stop,⏹️,
+기다리다,wait,⏳,
+서두르다,hurry,🏃,
+늦다,late,⏰,
+일찍,early,🌅,
+빨리,quickly,⚡,
+천천히,slowly,🐌,
+자주,often,🔄,
+가끔,sometimes,⏰,
+항상,always,♾️,
+절대,never,🚫,
+오늘,today,📅,
+어제,yesterday,📆,
+내일,tomorrow,📅,
+지금,now,⏰,
+나중에,later,⏳,
+이전에,before,⬅️,
+이후에,after,➡️,
+아침,morning,🌅,
+점심,lunch,🍽️,
+저녁,evening,🌆,
+밤,night,🌙,
+시간,time,⏰,
+날짜,date,📅,
+요일,day of week,📆,
+월,month,📅,
+년,year,📆,
+시,hour,🕐,
+분,minute,⏱️,
+초,second,2️⃣,
+월요일,Monday,,
+화요일,Tuesday,,
+수요일,Wednesday,,
+목요일,Thursday,,
+금요일,Friday,,
+토요일,Saturday,,
+일요일,Sunday,☀️,
+일월,January,,
+이월,February,,
+삼월,March,,
+사월,April,,
+오월,May,,
+유월,June,,
+칠월,July,,
+팔월,August,,
+구월,September,,
+시월,October,,
+십일월,November,❌,
+십이월,December,,
+사람,person,👤,
+남자,man,👨,
+여자,woman,👩,
+아이,child,👶,
+아기,baby,👶,
+학생,student,🎓,
+선생님,teacher,👨‍🏫,
+의사,doctor,👨‍⚕️,
+간호사,nurse,👩‍⚕️,
+엄마,mom,👩,
+아빠,dad,👨,
+형,older brother,👨,
+누나,older sister,👩,
+오빠,older brother,👨,
+언니,older sister,👩,
+동생,younger sibling,👶,
+남동생,younger brother,👦,
+여동생,younger sister,👧,
+할아버지,grandfather,👴,
+할머니,grandmother,👵,
+고양이,cat,🐱,
+강아지,dog,🐕,
+새,bird,🐦,
+물고기,fish,🐟,
+나무,tree,🌳,
+꽃,flower,🌸,
+풀,grass,🌱,
+하늘,sky,☁️,
+구름,cloud,☁️,
+태양,sun,☀️,
+달,moon,🌙,
+별,star,⭐,
+비,rain,🌧️,
+눈,snow,❄️,
+바람,wind,💨,
+번개,lightning,⚡,
+천둥,thunder,⛈️,
+날씨,weather,🌤️,
+맑다,clear,☀️,
+흐리다,cloudy,☁️,
+봄,spring,🌸,
+여름,summer,☀️,
+가을,autumn,🍂,
+겨울,winter,❄️,
+음식,food,🍽️,
+밥,rice,🍚,
+국,soup,🍲,
+고기,meat,🥩,
+생선,fish,🐟,
+야채,vegetable,🥬,
+과일,fruit,🍎,
+빵,bread,🍞,
+우유,milk,🥛,
+차,tea,🍵,
+커피,coffee,☕,
+주스,juice,🧃,
+맥주,beer,🍺,
+소주,soju,🍶,
+김치,kimchi,🥬,
+불고기,bulgogi,🥩,
+비빔밥,bibimbap,🍲,
+김밥,kimbap,🍱,
+라면,ramen,🍜,
+떡볶이,tteokbokki,🍢,
+치킨,chicken,🍗,
+피자,pizza,🍕,
+햄버거,hamburger,🍔,
+과자,snack,🍪,
+사탕,candy,🍬,
+초콜릿,chocolate,🍫,
+아이스크림,ice cream,🍦,
+케이크,cake,🎂,
+바나나,banana,🍌,
+오렌지,orange,🟠,
+포도,grape,🍇,
+딸기,strawberry,🍓,
+수박,watermelon,🍉,
+복숭아,peach,🍑,
+배,pear,🍐,
+체리,cherry,🍒,
+키위,kiwi,🥝,
+파인애플,pineapple,🍍,
+망고,mango,🥭,
+레몬,lemon,🍋,
+당근,carrot,🥕,
+양파,onion,🧅,
+마늘,garlic,🧄,
+감자,potato,🥔,
+고구마,sweet potato,🍠,
+토마토,tomato,🍅,
+오이,cucumber,🥒,
+상추,lettuce,🥬,
+배추,cabbage,🥬,
+브로콜리,broccoli,🥦,
+버섯,mushroom,🍄,
+고추,pepper,🌶️,
+옷,clothes,👕,
+셔츠,shirt,👔,
+바지,pants,👖,
+치마,skirt,👗,
+드레스,dress,👗,
+재킷,jacket,🧥,
+코트,coat,🧥,
+모자,hat,🎩,
+신발,shoes,👟,
+부츠,boots,👢,
+양말,socks,🧦,
+장갑,gloves,🧤,
+스카프,scarf,🧣,
+가방,bag,👜,
+지갑,wallet,👛,
+시계,watch,⌚,
+안경,glasses,👓,
+귀걸이,earrings,👂,
+목걸이,necklace,📿,
+반지,ring,💍,
+방,room,🚪,
+침실,bedroom,🛏️,
+거실,living room,🛋️,
+부엌,kitchen,🍳,
+화장실,bathroom,🚿,
+욕조,bathtub,🛁,
+샤워,shower,🚿,
+침대,bed,🛏️,
+이불,blanket,🛏️,
+베개,pillow,🛏️,
+의자,chair,🪑,
+테이블,table,🪑,
+소파,sofa,🛋️,
+책상,desk,🪑,
+책장,bookshelf,📚,
+냉장고,refrigerator,❄️,
+전자레인지,microwave,📡,
+세탁기,washing machine,🌀,
+청소기,vacuum cleaner,🧹,
+텔레비전,television,📺,
+컴퓨터,computer,💻,
+노트북,laptop,💻,
+스마트폰,smartphone,📱,
+태블릿,tablet,📱,
+인터넷,internet,🌐,
+이메일,email,📧,
+메시지,message,💬,
+전화,phone,📞,
+전화하다,call,📞,
+문자,text message,💬,
+카메라,camera,📷,
+사진,photo,📸,
+영화,movie,🎬,
+음악,music,🎵,
+노래,song,🎵,
+책,book,📚,
+신문,newspaper,📰,
+잡지,magazine,📖,
+펜,pen,✏️,
+연필,pencil,✏️,
+종이,paper,📄,
+가위,scissors,✂️,
+풀,glue,🧴,
+자,ruler,📏,
+지우개,eraser,🧹,
+공책,notebook,📓,
+대학교,university,🏫,
+교실,classroom,🏫,
+도서관,library,📚,
+운동장,playground,🛝,
+교수,professor,👨‍🏫,
+수업,class,📚,
+과목,subject,📖,
+숙제,homework,📝,
+시험,exam,📝,
+성적,grade,📊,
+공부하다,study,📚,
+그리다,draw,🎨,
+색깔,color,🎨,
+빨간색,red,🔴,
+주황색,orange,🟠,
+노란색,yellow,🟡,
+초록색,green,🟢,
+파란색,blue,🔵,
+보라색,purple,🟣,
+분홍색,pink,🩷,
+검은색,black,⚫,
+흰색,white,⚪,
+회색,gray,⚪,
+갈색,brown,🟤,
+숫자,number,🔢,
+영,zero,0️⃣,
+일,one,1️⃣,
+이,two,2️⃣,
+삼,three,3️⃣,
+사,four,4️⃣,
+오,five,5️⃣,
+육,six,6️⃣,
+칠,seven,7️⃣,
+팔,eight,8️⃣,
+구,nine,9️⃣,
+십,ten,🔟,
+십일,eleven,1️⃣1️⃣,
+십이,twelve,1️⃣2️⃣,
+이십,twenty,2️⃣0️⃣,
+삼십,thirty,3️⃣0️⃣,
+사십,forty,4️⃣0️⃣,
+오십,fifty,5️⃣0️⃣,
+육십,sixty,6️⃣0️⃣,
+칠십,seventy,7️⃣0️⃣,
+팔십,eighty,8️⃣0️⃣,
+구십,ninety,9️⃣0️⃣,
+백,hundred,💯,
+천,thousand,1️⃣0️⃣0️⃣0️⃣,
+만,ten thousand,1️⃣0️⃣0️⃣0️⃣0️⃣,
+백만,million,💵,
+십억,billion,💰,
+첫 번째,first,1️⃣,
+두 번째,second,2️⃣,
+세 번째,third,3️⃣,
+네 번째,fourth,4️⃣,
+다섯 번째,fifth,5️⃣,
+몇,how many,❓,
+얼마,how much,💰,
+어디,where,📍,
+언제,when,⏰,
+누구,who,👤,
+무엇,what,❓,
+어떻게,how,❓,
+왜,why,❓,
+어느,which,❓,
+어떤,what kind,❓,
+몇 시,what time,🕐,
+이것,this,👉,
+그것,that,👉,
+저것,that,👉,
+여기,here,📍,
+거기,there,📍,
+저기,over there,📍,
+이쪽,this way,👉,
+그쪽,that way,👉,
+저쪽,that way,👉,
+모레,day after tomorrow,📅,
+그저께,day before yesterday,📅,
+이번 주,this week,📅,
+지난 주,last week,📅,
+다음 주,next week,📅,
+이번 달,this month,📅,
+지난 달,last month,📅,
+다음 달,next month,📅,
+올해,this year,📅,
+작년,last year,📅,
+내년,next year,📅,
+요즘,these days,📅,
+최근,recently,🕐,
+예전에,in the past,⬅️,
+곧,soon,⏳,
+바로,right away,⚡,
+즉시,immediately,⚡,
+아까,earlier,⏰,
+때때로,occasionally,⏰,
+거의,almost,📊,
+전혀,not at all,❌,
+이미,already,✅,
+아직,yet,⏳,
+벌써,already,✅,
+서둘러,hurry,🏃,
+여유롭게,leisurely,🚶,
+조용히,quietly,🤫,
+시끄럽게,noisily,🔊,
+크게,loudly,🔊,
+작게,quietly,🤫,
+높게,highly,⬆️,
+낮게,lowly,⬇️,
+깊게,deeply,⬇️,
+얕게,shallowly,💧,
+넓게,widely,↔️,
+좁게,narrowly,↕️,
+길게,longly,📏,
+짧게,shortly,📐,
+무겁게,heavily,⚖️,
+가볍게,lightly,💡,
+딱딱하게,hardly,💎,
+부드럽게,softly,🪶,
+뜨겁게,hotly,🔥,
+차갑게,coldly,❄️,
+따뜻하게,warmly,☀️,
+시원하게,coolly,❄️,
+밝게,brightly,☀️,
+어둡게,darkly,🌙,
+깨끗하게,cleanly,✨,
+더럽게,dirtily,💩,
+건강하게,healthily,💪,
+아프게,sickly,🤒,
+똑똑하게,smartly,🧠,
+바보같이,stupidly,🤪,
+친절하게,kindly,🤗,
+무례하게,rudely,😤,
+용감하게,bravely,🦁,
+겁쟁이처럼,cowardly,😰,
+정직하게,honestly,🤝,
+거짓말처럼,lyingly,🤥,
+용서하며,forgivingly,🙏,
+도와주며,helpfully,🆘,
+사과하며,apologetically,🙇,
+감사하며,thankfully,🙏,
+축하하며,congratulatorily,🎉,
+만나며,meeting,🤝,
+만들며,making,🔨,
+사용하며,using,🔧,
+필요하며,needing,📌,
+원하며,wanting,👆,
+좋아하며,liking,👍,
+싫어하며,disliking,👎,
+사랑하며,loving,❤️,
+미워하며,hating,💔,
+생각하며,thinking,🤔,
+알며,knowing,🧠,
+모르며,not knowing,❓,
+기억하며,remembering,🧠,
+잊으며,forgetting,🧹,
+배우며,learning,📚,
+가르치며,teaching,👨‍🏫,
+읽으며,reading,📖,
+쓰며,writing,✍️,
+들으며,listening,👂,
+말하며,speaking,🗣️,
+이야기하며,talking,💬,
+질문하며,asking,❓,
+대답하며,answering,💬,
+물어보며,asking,❓,
+알려주며,telling,📢,
+설명하며,explaining,📝,
+이해하며,understanding,💡,
+모르며,not understanding,❓,
+시작하며,starting,🚀,
+끝나며,finishing,🏁,
+계속하며,continuing,▶️,
+멈추며,stopping,⏹️,
+기다리며,waiting,⏳,
+서두르며,hurrying,🏃,
+늦으며,being late,⏰,

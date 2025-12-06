@@ -19,14 +19,16 @@ function convertCsvToJson() {
   const words = [];
   
   for (const line of dataLines) {
-    // Handle CSV parsing
-    const match = line.match(/^(.+?),(.+)$/);
-    if (match) {
-      const korean = match[1].trim();
-      const english = match[2].trim();
+    // Handle CSV parsing - now supports korean,english,emoji,imageUrl
+    const parts = line.split(',');
+    if (parts.length >= 2) {
+      const korean = parts[0].trim();
+      const english = parts[1].trim();
+      const emoji = parts[2]?.trim() || '';
+      const imageUrl = parts[3]?.trim() || '';
       
       if (korean && english) {
-        words.push({ korean, english });
+        words.push({ korean, english, emoji, imageUrl });
       }
     }
   }

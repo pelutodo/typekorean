@@ -162,7 +162,7 @@ function AppContent() {
         ) : currentWord ? (
           <>
             <Text style={styles.emoji}>
-              {currentWord.english === 'dog' ? '🐕' : '📚'}
+              {currentWord.emoji || '📚'}
             </Text>
             <View style={styles.koreanTextContainer}>
               <Text style={styles.koreanText}>{currentWord.korean}</Text>
