@@ -1,0 +1,66 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# React Native
+TypeKorean/node_modules/
+TypeKorean/.expo/
+TypeKorean/.expo-shared/
+
+# iOS
+TypeKorean/ios/Pods/
+TypeKorean/ios/build/
+TypeKorean/ios/*.xcworkspace/xcuserdata/
+TypeKorean/ios/*.xcodeproj/xcuserdata/
+TypeKorean/ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+TypeKorean/ios/DerivedData/
+TypeKorean/ios/*.xcuserstate
+TypeKorean/ios/.xcode.env.local
+
+# Android
+TypeKorean/android/.gradle/
+TypeKorean/android/build/
+TypeKorean/android/app/build/
+TypeKorean/android/local.properties
+TypeKorean/android/.idea/
+TypeKorean/android/*.iml
+TypeKorean/android/.cxx/
+
+# Ruby / CocoaPods
+TypeKorean/vendor/
+TypeKorean/.bundle/
+TypeKorean/Gemfile.lock
+
+# Metro bundler
+TypeKorean/.metro-health-check*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Testing
+TypeKorean/coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
