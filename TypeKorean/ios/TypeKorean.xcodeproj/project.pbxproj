@@ -11,6 +11,7 @@
 		03C1C0B62EE4C6C900704516 /* key.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03C1C0B52EE4C6C900704516 /* key.wav */; };
 		03C1C0B92EE4C77400704516 /* SoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C1C0B72EE4C77400704516 /* SoundPlayer.m */; };
 		03C1C0BA2EE4C77400704516 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C1C0B82EE4C77400704516 /* SoundPlayer.swift */; };
+		03C1C0BD2EE4CA5B00704516 /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03C1C0BC2EE4CA5B00704516 /* success.mp3 */; };
 		0C80B921A6F3F58F76C31292 /* libPods-TypeKorean.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-TypeKorean.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 		03C1C0B72EE4C77400704516 /* SoundPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundPlayer.m; sourceTree = "<group>"; };
 		03C1C0B82EE4C77400704516 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		03C1C0BB2EE4C78000704516 /* TypeKorean-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TypeKorean-Bridging-Header.h"; sourceTree = "<group>"; };
+		03C1C0BC2EE4CA5B00704516 /* success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = success.mp3; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* TypeKorean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypeKorean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TypeKorean/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TypeKorean/Info.plist; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				03C1C0BC2EE4CA5B00704516 /* success.mp3 */,
 				03C1C0B72EE4C77400704516 /* SoundPlayer.m */,
 				03C1C0B82EE4C77400704516 /* SoundPlayer.swift */,
 				03C1C0B52EE4C6C900704516 /* key.wav */,
@@ -175,6 +178,7 @@
 			files = (
 				03C1C0B62EE4C6C900704516 /* key.wav in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				03C1C0BD2EE4CA5B00704516 /* success.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				F1D137C74D9BF5E3283E1AF5 /* PrivacyInfo.xcprivacy in Resources */,
 			);

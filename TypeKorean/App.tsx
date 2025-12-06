@@ -5,7 +5,7 @@
  * @format
  */
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 import KoreanKeyboard from './components/KoreanKeyboard';
@@ -15,6 +15,7 @@ import {
   getWordsBatch,
   type Word,
 } from './services/database';
+import { playSuccessSound } from './utils/sound';
 
 function App() {
   return (
@@ -36,6 +37,16 @@ function AppContent() {
   const currentWord = wordsBatch[currentWordIndex];
   const targetWord = currentWord?.korean || '';
   const isMatch = text.trim() === targetWord;
+  const prevIsMatchRef = useRef(false);
+
+  // Play success sound when word is matched
+  useEffect(() => {
+    if (isMatch && !prevIsMatchRef.current && targetWord) {
+      // Only play if we just matched (wasn't matched before)
+      playSuccessSound();
+    }
+    prevIsMatchRef.current = isMatch;
+  }, [isMatch, targetWord]);
 
   // Initialize database and load first batch
   useEffect(() => {

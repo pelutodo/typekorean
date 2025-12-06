@@ -50,6 +50,25 @@ export function playTypingSound(): void {
 }
 
 /**
+ * Play the success sound when word is matched
+ */
+export function playSuccessSound(): void {
+  if (!SoundPlayer) {
+    console.warn('SoundPlayer native module not available');
+    return;
+  }
+
+  // Play the success sound file
+  SoundPlayer.playSound('success.mp3')
+    .then(() => {
+      // Sound played successfully
+    })
+    .catch((error: any) => {
+      console.warn('Failed to play success sound:', error);
+    });
+}
+
+/**
  * Release the sound resource
  */
 export function releaseTypingSound(): void {
