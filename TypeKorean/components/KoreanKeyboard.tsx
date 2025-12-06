@@ -28,9 +28,6 @@ const KEYBOARD_LAYOUT = [
   ['ㅋ', 'ㅌ', 'ㅊ', 'ㅍ', 'ㅠ', 'ㅜ', 'ㅡ'],
 ];
 
-// Number row
-const NUMBER_ROW = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
-
 function KoreanKeyboard({
   onKeyPress,
   onBackspace,
@@ -80,6 +77,7 @@ function KoreanKeyboard({
           styles.key,
           isSpecialKey && styles.specialKey,
           key === 'space' && styles.spaceKey,
+          key === 'backspace' && styles.backspaceKey,
         ]}
         onPress={() => {
           if (key === 'backspace') {
@@ -87,7 +85,8 @@ function KoreanKeyboard({
           } else if (key === 'space') {
             handleSpace();
           } else if (key === 'enter') {
-            handleEnter();
+            // Enter key is non-functional
+            return;
           } else {
             handleKeyPress(key);
           }
@@ -102,23 +101,18 @@ function KoreanKeyboard({
 
   return (
     <View style={styles.container}>
-      {/* Number row */}
-      <View style={styles.row}>
-        {NUMBER_ROW.map((num, index) => renderKey(num, index))}
-        {renderKey('backspace', NUMBER_ROW.length)}
-      </View>
-
       {/* Korean character rows */}
       {KEYBOARD_LAYOUT.map((row, rowIndex) => (
         <View key={rowIndex} style={styles.row}>
           {row.map((char, charIndex) => renderKey(char, charIndex))}
-          {rowIndex === KEYBOARD_LAYOUT.length - 1 && renderKey('enter', row.length)}
+          {rowIndex === KEYBOARD_LAYOUT.length - 1 && renderKey('backspace', row.length)}
         </View>
       ))}
 
-      {/* Space bar row */}
+      {/* Space bar row with enter */}
       <View style={styles.row}>
         {renderKey('space', 0)}
+        {renderKey('enter', 1)}
       </View>
     </View>
   );
@@ -158,6 +152,10 @@ const styles = StyleSheet.create({
   specialKey: {
     backgroundColor: '#BDBDBD',
     minWidth: 60,
+  },
+  backspaceKey: {
+    minWidth: 40,
+    paddingHorizontal: 8,
   },
   spaceKey: {
     flex: 1,
