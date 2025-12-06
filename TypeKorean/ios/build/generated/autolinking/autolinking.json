@@ -3,6 +3,34 @@
   "reactNativePath": "/Users/nico/typekorean/TypeKorean/node_modules/react-native",
   "reactNativeVersion": "0.82",
   "dependencies": {
+    "react-native-gesture-handler": {
+      "root": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-gesture-handler",
+      "name": "react-native-gesture-handler",
+      "platforms": {
+        "ios": {
+          "podspecPath": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-gesture-handler/RNGestureHandler.podspec",
+          "version": "2.29.1",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-gesture-handler/android",
+          "packageImportPath": "import com.swmansion.gesturehandler.RNGestureHandlerPackage;",
+          "packageInstance": "new RNGestureHandlerPackage()",
+          "buildTypes": [],
+          "libraryName": "rngesturehandler_codegen",
+          "componentDescriptors": [
+            "RNGestureHandlerButtonComponentDescriptor",
+            "RNGestureHandlerRootViewComponentDescriptor"
+          ],
+          "cmakeListsPath": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
     "react-native-quick-sqlite": {
       "root": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-quick-sqlite",
       "name": "react-native-quick-sqlite",

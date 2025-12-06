@@ -8,6 +8,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
+import { GestureHandlerRootView, GestureDetector, Gesture } from 'react-native-gesture-handler';
 import KoreanKeyboard from './components/KoreanKeyboard';
 import { addJamo, handleBackspace as handleHangulBackspace } from './utils/hangulComposer';
 import {
@@ -20,10 +21,12 @@ import { initializeTTS, speakKorean } from './utils/textToSpeech';
 
 function App() {
   return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
     <SafeAreaProvider>
-      <StatusBar barStyle="dark-content" />
+        <StatusBar barStyle="dark-content" />
       <AppContent />
     </SafeAreaProvider>
+    </GestureHandlerRootView>
   );
 }
 
@@ -168,6 +171,19 @@ function AppContent() {
     setText('');
   };
 
+  // Swipe gesture for skipping (swipe left or right)
+  const swipeGesture = Gesture.Pan()
+    .activeOffsetX([-10, 10]) // Minimum horizontal movement to activate (both directions)
+    .failOffsetY([-10, 10]) // Fail if vertical movement is too large
+    .onEnd((event) => {
+      // Swipe left or right (either direction skips)
+      const swipeDistance = Math.abs(event.translationX);
+      const swipeVelocity = Math.abs(event.velocityX);
+      if (swipeDistance > 50 || swipeVelocity > 300) {
+        handleSkip();
+      }
+    });
+
   return (
     <View style={styles.container}>
       <View style={[styles.header, { paddingTop: insets.top }]}>
@@ -179,39 +195,43 @@ function AppContent() {
         </TouchableOpacity>
       </View>
       <View style={styles.content}>
-        {isLoading ? (
-          <Text style={styles.loadingText}>Loading...</Text>
-        ) : currentWord ? (
-          <>
-            <Text style={styles.emoji}>
-              {currentWord.emoji || '📚'}
-            </Text>
-            <View style={styles.koreanTextContainer}>
-              <Text style={styles.koreanText}>{currentWord.korean}</Text>
-              <TouchableOpacity
-                style={styles.speakerButton}
-                onPress={handleSpeak}
-                activeOpacity={0.7}>
-                <Text style={styles.speakerIcon}>🔊</Text>
-              </TouchableOpacity>
-              {isMatch && <Text style={styles.checkEmoji}>✅</Text>}
-            </View>
-            <Text style={styles.englishHint}>{currentWord.english}</Text>
-          </>
-        ) : (
-          <Text style={styles.loadingText}>No words available</Text>
-        )}
-        <View style={styles.textContainer}>
-          <Text style={styles.typedText}>{text || ' '}</Text>
-        </View>
-        {isMatch && (
-          <TouchableOpacity
-            style={styles.nextButton}
-            onPress={handleNext}
-            activeOpacity={0.8}>
-            <Text style={styles.nextButtonText}>Next</Text>
-          </TouchableOpacity>
-        )}
+        <GestureDetector gesture={swipeGesture}>
+          <View style={styles.swipeArea}>
+          {isLoading ? (
+            <Text style={styles.loadingText}>Loading...</Text>
+          ) : currentWord ? (
+            <>
+              <Text style={styles.emoji}>
+                {currentWord.emoji || '📚'}
+              </Text>
+              <View style={styles.koreanTextContainer}>
+                <Text style={styles.koreanText}>{currentWord.korean}</Text>
+                <TouchableOpacity
+                  style={styles.speakerButton}
+                  onPress={handleSpeak}
+                  activeOpacity={0.7}>
+                  <Text style={styles.speakerIcon}>🔊</Text>
+                </TouchableOpacity>
+                {isMatch && <Text style={styles.checkEmoji}>✅</Text>}
+              </View>
+              <Text style={styles.englishHint}>{currentWord.english}</Text>
+            </>
+          ) : (
+            <Text style={styles.loadingText}>No words available</Text>
+          )}
+          <View style={styles.textContainer}>
+            <Text style={styles.typedText}>{text || ' '}</Text>
+          </View>
+          {isMatch && (
+            <TouchableOpacity
+              style={styles.nextButton}
+              onPress={handleNext}
+              activeOpacity={0.8}>
+              <Text style={styles.nextButtonText}>Next</Text>
+            </TouchableOpacity>
+          )}
+          </View>
+        </GestureDetector>
       </View>
       <KoreanKeyboard
         onKeyPress={handleKeyPress}
@@ -250,6 +270,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingBottom: 20,
+  },
+  swipeArea: {
+    flex: 1,
+    width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   emoji: {
     fontSize: 100,
