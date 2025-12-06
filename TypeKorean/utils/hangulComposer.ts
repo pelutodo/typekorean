@@ -111,6 +111,19 @@ function isSyllable(char: string): boolean {
 }
 
 /**
+ * Check if two vowels can combine into a compound vowel
+ * Returns the compound vowel if they can combine, null otherwise
+ */
+function combineVowels(vowel1: string, vowel2: string): string | null {
+  const combinations: Record<string, Record<string, string>> = {
+    'ㅗ': { 'ㅏ': 'ㅘ', 'ㅐ': 'ㅙ', 'ㅣ': 'ㅚ' },
+    'ㅜ': { 'ㅓ': 'ㅝ', 'ㅔ': 'ㅞ', 'ㅣ': 'ㅟ' },
+    'ㅡ': { 'ㅣ': 'ㅢ' },
+  };
+  return combinations[vowel1]?.[vowel2] || null;
+}
+
+/**
  * Add a jamo character to the current composition state
  */
 export function addJamo(
@@ -140,8 +153,43 @@ export function addJamo(
   if (isSyllable(lastChar)) {
     const decomposed = decomposeSyllable(lastChar);
     if (decomposed) {
-      // If syllable has no final and we're adding a final consonant
-      if (!decomposed.final && isFinal(newJamo)) {
+      // Special case: If syllable has a final and we're adding a vowel,
+      // decompose the final and start new syllable with it
+      if (decomposed.final && isVowel(newJamo)) {
+        const syllableWithoutFinal = combineJamo(
+          decomposed.initial,
+          decomposed.vowel,
+          '',
+        );
+        // Start new syllable: final becomes initial + vowel (combine them)
+        const newSyllable = combineJamo(decomposed.final, newJamo, '');
+        return currentText.slice(0, -1) + syllableWithoutFinal + newSyllable;
+      }
+      
+      // If syllable has a final and we're adding an initial, start new syllable
+      if (decomposed.final && isInitial(newJamo)) {
+        return currentText + newJamo;
+      }
+      
+      // Syllable has no final
+      // If adding a vowel, check if it can combine with existing vowel
+      if (isVowel(newJamo)) {
+        const compoundVowel = combineVowels(decomposed.vowel, newJamo);
+        if (compoundVowel) {
+          // Combine the vowels into a compound vowel
+          const newSyllable = combineJamo(
+            decomposed.initial,
+            compoundVowel,
+            '',
+          );
+          return currentText.slice(0, -1) + newSyllable;
+        }
+        // Can't combine, start new syllable
+        return currentText + newJamo;
+      }
+      
+      // If adding a consonant that can be a final, add it as final
+      if (isFinal(newJamo)) {
         const newSyllable = combineJamo(
           decomposed.initial,
           decomposed.vowel,
@@ -149,12 +197,9 @@ export function addJamo(
         );
         return currentText.slice(0, -1) + newSyllable;
       }
-      // If syllable has a final and we're adding an initial, start new syllable
-      if (decomposed.final && isInitial(newJamo)) {
-        return currentText + newJamo;
-      }
-      // If adding a vowel to a complete syllable, start new syllable
-      if (isVowel(newJamo)) {
+      
+      // If it's an initial but not a final, start new syllable
+      if (isInitial(newJamo)) {
         return currentText + newJamo;
       }
     }

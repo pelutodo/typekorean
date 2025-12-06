@@ -3,6 +3,31 @@
   "reactNativePath": "/Users/nico/typekorean/TypeKorean/node_modules/react-native",
   "reactNativeVersion": "0.82",
   "dependencies": {
+    "react-native-quick-sqlite": {
+      "root": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-quick-sqlite",
+      "name": "react-native-quick-sqlite",
+      "platforms": {
+        "ios": {
+          "podspecPath": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-quick-sqlite/react-native-quick-sqlite.podspec",
+          "version": "8.2.7",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-quick-sqlite/android",
+          "packageImportPath": "import com.margelo.rnquicksqlite.SequelPackage;",
+          "packageInstance": "new SequelPackage()",
+          "buildTypes": [],
+          "libraryName": "RNQuickSQLite",
+          "componentDescriptors": [],
+          "cmakeListsPath": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-quick-sqlite/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
     "react-native-safe-area-context": {
       "root": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-safe-area-context",
       "name": "react-native-safe-area-context",
@@ -494,9 +519,9 @@
     "ios": {
       "sourceDir": "/Users/nico/typekorean/TypeKorean/ios",
       "xcodeProject": {
-        "name": "TypeKorean.xcodeproj",
+        "name": "TypeKorean.xcworkspace",
         "path": ".",
-        "isWorkspace": false
+        "isWorkspace": true
       },
       "assets": []
     },

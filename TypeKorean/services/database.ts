@@ -224,3 +224,41 @@ export async function getWordCount(): Promise<number> {
   }
 }
 
+/**
+ * Get words in batches (pagination)
+ * @param limit - Number of words to fetch
+ * @param offset - Number of words to skip
+ */
+export async function getWordsBatch(
+  limit: number = 10,
+  offset: number = 0,
+): Promise<Word[]> {
+  if (!db) {
+    throw new Error('Database not initialized');
+  }
+
+  try {
+    const result = db.execute(
+      'SELECT * FROM words ORDER BY id LIMIT ? OFFSET ?',
+      [limit, offset],
+    );
+    const words: Word[] = [];
+
+    if (result.rows) {
+      for (let i = 0; i < result.rows.length; i++) {
+        const row = result.rows.item(i);
+        words.push({
+          id: row.id as number,
+          korean: row.korean as string,
+          english: row.english as string,
+        });
+      }
+    }
+
+    return words;
+  } catch (error) {
+    console.error('Error getting words batch:', error);
+    return [];
+  }
+}
+
