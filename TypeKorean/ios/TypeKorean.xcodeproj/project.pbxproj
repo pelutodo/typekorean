@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03C1C0B42EE4C6AA00704516 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C1C0B32EE4C6AA00704516 /* AVFoundation.framework */; };
+		03C1C0B62EE4C6C900704516 /* key.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03C1C0B52EE4C6C900704516 /* key.wav */; };
+		03C1C0B92EE4C77400704516 /* SoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C1C0B72EE4C77400704516 /* SoundPlayer.m */; };
+		03C1C0BA2EE4C77400704516 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C1C0B82EE4C77400704516 /* SoundPlayer.swift */; };
 		0C80B921A6F3F58F76C31292 /* libPods-TypeKorean.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-TypeKorean.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
@@ -15,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03C1C0B32EE4C6AA00704516 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		03C1C0B52EE4C6C900704516 /* key.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = key.wav; sourceTree = "<group>"; };
+		03C1C0B72EE4C77400704516 /* SoundPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundPlayer.m; sourceTree = "<group>"; };
+		03C1C0B82EE4C77400704516 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		03C1C0BB2EE4C78000704516 /* TypeKorean-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TypeKorean-Bridging-Header.h"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* TypeKorean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypeKorean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TypeKorean/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TypeKorean/Info.plist; sourceTree = "<group>"; };
@@ -32,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C1C0B42EE4C6AA00704516 /* AVFoundation.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-TypeKorean.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +64,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03C1C0B32EE4C6AA00704516 /* AVFoundation.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-TypeKorean.a */,
 			);
@@ -70,11 +81,15 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				03C1C0B72EE4C77400704516 /* SoundPlayer.m */,
+				03C1C0B82EE4C77400704516 /* SoundPlayer.swift */,
+				03C1C0B52EE4C6C900704516 /* key.wav */,
 				13B07FAE1A68108700A75B9A /* TypeKorean */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				03C1C0BB2EE4C78000704516 /* TypeKorean-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -131,7 +146,7 @@
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 2610;
 					};
 				};
 			};
@@ -158,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C1C0B62EE4C6C900704516 /* key.wav in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				F1D137C74D9BF5E3283E1AF5 /* PrivacyInfo.xcprivacy in Resources */,
@@ -191,9 +207,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TypeKorean/Pods-TypeKorean-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TypeKorean/Pods-TypeKorean-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -230,9 +250,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TypeKorean/Pods-TypeKorean-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TypeKorean/Pods-TypeKorean-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -246,6 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C1C0B92EE4C77400704516 /* SoundPlayer.m in Sources */,
+				03C1C0BA2EE4C77400704516 /* SoundPlayer.swift in Sources */,
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +301,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TypeKorean;
+				SWIFT_OBJC_BRIDGING_HEADER = "TypeKorean-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -302,6 +329,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TypeKorean;
+				SWIFT_OBJC_BRIDGING_HEADER = "TypeKorean-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

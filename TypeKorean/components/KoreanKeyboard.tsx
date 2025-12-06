@@ -5,13 +5,14 @@
  * @format
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   StyleSheet,
   Text,
   TouchableOpacity,
   View,
 } from 'react-native';
+import { initializeTypingSound, playTypingSound, releaseTypingSound } from '../utils/sound';
 
 interface KoreanKeyboardProps {
   onKeyPress: (key: string) => void;
@@ -36,8 +37,37 @@ function KoreanKeyboard({
   onSpace,
   onEnter,
 }: KoreanKeyboardProps) {
+  useEffect(() => {
+    initializeTypingSound();
+    return () => {
+      releaseTypingSound();
+    };
+  }, []);
+
   const handleKeyPress = (key: string) => {
+    playTypingSound();
     onKeyPress(key);
+  };
+
+  const handleBackspace = () => {
+    playTypingSound();
+    if (onBackspace) {
+      onBackspace();
+    }
+  };
+
+  const handleSpace = () => {
+    playTypingSound();
+    if (onSpace) {
+      onSpace();
+    }
+  };
+
+  const handleEnter = () => {
+    playTypingSound();
+    if (onEnter) {
+      onEnter();
+    }
   };
 
   const renderKey = (key: string, index: number) => {
@@ -52,12 +82,12 @@ function KoreanKeyboard({
           key === 'space' && styles.spaceKey,
         ]}
         onPress={() => {
-          if (key === 'backspace' && onBackspace) {
-            onBackspace();
-          } else if (key === 'space' && onSpace) {
-            onSpace();
-          } else if (key === 'enter' && onEnter) {
-            onEnter();
+          if (key === 'backspace') {
+            handleBackspace();
+          } else if (key === 'space') {
+            handleSpace();
+          } else if (key === 'enter') {
+            handleEnter();
           } else {
             handleKeyPress(key);
           }
