@@ -16,6 +16,7 @@ import {
   type Word,
 } from './services/database';
 import { playSuccessSound } from './utils/sound';
+import { initializeTTS, speakKorean } from './utils/textToSpeech';
 
 function App() {
   return (
@@ -48,6 +49,18 @@ function AppContent() {
     prevIsMatchRef.current = isMatch;
   }, [isMatch, targetWord]);
 
+  // Speak the Korean word when it changes
+  useEffect(() => {
+    if (currentWord?.korean && !isLoading) {
+      // Small delay to ensure TTS is ready
+      const timer = setTimeout(() => {
+        speakKorean(currentWord.korean);
+      }, 300);
+      
+      return () => clearTimeout(timer);
+    }
+  }, [currentWord?.korean, isLoading]);
+
   // Initialize database and load first batch
   useEffect(() => {
     async function init() {
@@ -59,6 +72,9 @@ function AppContent() {
         console.log(`Loaded ${words.length} words:`, words);
         setWordsBatch(words);
         setIsLoading(false);
+        
+        // Initialize TTS
+        await initializeTTS();
       } catch (error) {
         console.error('Error initializing app:', error);
         console.error('Error details:', JSON.stringify(error, null, 2));
@@ -67,6 +83,12 @@ function AppContent() {
     }
     init();
   }, []);
+
+  const handleSpeak = () => {
+    if (currentWord?.korean) {
+      speakKorean(currentWord.korean);
+    }
+  };
 
   // Load next batch when reaching the end
   const loadNextBatch = async (): Promise<Word[]> => {
@@ -166,6 +188,12 @@ function AppContent() {
             </Text>
             <View style={styles.koreanTextContainer}>
               <Text style={styles.koreanText}>{currentWord.korean}</Text>
+              <TouchableOpacity
+                style={styles.speakerButton}
+                onPress={handleSpeak}
+                activeOpacity={0.7}>
+                <Text style={styles.speakerIcon}>🔊</Text>
+              </TouchableOpacity>
               {isMatch && <Text style={styles.checkEmoji}>✅</Text>}
             </View>
             <Text style={styles.englishHint}>{currentWord.english}</Text>
@@ -234,6 +262,13 @@ const styles = StyleSheet.create({
   },
   koreanText: {
     fontSize: 48,
+  },
+  speakerButton: {
+    padding: 8,
+    marginLeft: 8,
+  },
+  speakerIcon: {
+    fontSize: 24,
   },
   checkEmoji: {
     fontSize: 40,

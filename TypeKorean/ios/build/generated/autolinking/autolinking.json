@@ -55,6 +55,30 @@
           "isPureCxxDependency": false
         }
       }
+    },
+    "react-native-tts": {
+      "root": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-tts",
+      "name": "react-native-tts",
+      "platforms": {
+        "ios": {
+          "podspecPath": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-tts/TextToSpeech.podspec",
+          "version": "4.1.1",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-tts/android",
+          "packageImportPath": "import net.no_mad.tts.TextToSpeechPackage;",
+          "packageInstance": "new TextToSpeechPackage()",
+          "buildTypes": [],
+          "componentDescriptors": [],
+          "cmakeListsPath": "/Users/nico/typekorean/TypeKorean/node_modules/react-native-tts/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
     }
   },
   "commands": [
