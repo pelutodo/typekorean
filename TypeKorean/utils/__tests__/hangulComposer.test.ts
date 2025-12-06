@@ -190,5 +190,39 @@ describe('Hangul Composer', () => {
       expect(text).toBe('고마워');
     });
   });
+
+  describe('"없다" test case', () => {
+    test('should form "없다" correctly', () => {
+      let text = '';
+      text = addJamo(text, 'ㅇ'); // ㅇ
+      expect(text).toBe('ㅇ');
+      text = addJamo(text, 'ㅓ'); // 어
+      expect(text).toBe('어');
+      text = addJamo(text, 'ㅂ'); // 업 (adds ㅂ as final)
+      expect(text).toBe('업');
+      text = addJamo(text, 'ㅅ'); // 업 + ㅅ → 없 (combines ㅂ + ㅅ = ㅄ final)
+      expect(text).toBe('없');
+      text = addJamo(text, 'ㄷ'); // 없 + ㄷ → 없ㄷ (starts new syllable)
+      expect(text).toBe('없ㄷ');
+      text = addJamo(text, 'ㅏ'); // 없ㄷ + ㅏ → 없다 (combines ㄷ + ㅏ = 다)
+      expect(text).toBe('없다');
+    });
+
+    test('should form "많다" correctly', () => {
+      let text = '';
+      text = addJamo(text, 'ㅁ'); // ㅁ
+      expect(text).toBe('ㅁ');
+      text = addJamo(text, 'ㅏ'); // 마
+      expect(text).toBe('마');
+      text = addJamo(text, 'ㄴ'); // 만 (adds ㄴ as final)
+      expect(text).toBe('만');
+      text = addJamo(text, 'ㅎ'); // 만 + ㅎ → 많 (combines ㄴ + ㅎ = ㄶ final)
+      expect(text).toBe('많');
+      text = addJamo(text, 'ㄷ'); // 많 + ㄷ → 많ㄷ (starts new syllable)
+      expect(text).toBe('많ㄷ');
+      text = addJamo(text, 'ㅏ'); // 많ㄷ + ㅏ → 많다 (combines ㄷ + ㅏ = 다)
+      expect(text).toBe('많다');
+    });
+  });
 });
 

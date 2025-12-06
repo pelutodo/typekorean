@@ -124,6 +124,21 @@ function combineVowels(vowel1: string, vowel2: string): string | null {
 }
 
 /**
+ * Check if two final consonants can combine into a compound final
+ * Returns the compound final if they can combine, null otherwise
+ */
+function getCompoundFinal(final1: string, final2: string): string | null {
+  // Compound finals mapping: first final + second final = compound final
+  const compoundFinals: Record<string, Record<string, string>> = {
+    'ㄱ': { 'ㅅ': 'ㄳ' },
+    'ㄴ': { 'ㅈ': 'ㄵ', 'ㅎ': 'ㄶ' },
+    'ㄹ': { 'ㄱ': 'ㄺ', 'ㅁ': 'ㄻ', 'ㅂ': 'ㄼ', 'ㅅ': 'ㄽ', 'ㅌ': 'ㄾ', 'ㅍ': 'ㄿ', 'ㅎ': 'ㅀ' },
+    'ㅂ': { 'ㅅ': 'ㅄ' },
+  };
+  return compoundFinals[final1]?.[final2] || null;
+}
+
+/**
  * Add a jamo character to the current composition state
  */
 export function addJamo(
@@ -166,9 +181,39 @@ export function addJamo(
         return currentText.slice(0, -1) + syllableWithoutFinal + newSyllable;
       }
       
-      // If syllable has a final and we're adding an initial, start new syllable
-      if (decomposed.final && isInitial(newJamo)) {
-        return currentText + newJamo;
+      // If syllable has a final
+      if (decomposed.final) {
+        // First, check if we can form a compound final (e.g., ㅂ + ㅅ = ㅄ)
+        // This takes priority even if the jamo can also be an initial
+        if (isFinal(newJamo)) {
+          const compoundFinal = getCompoundFinal(decomposed.final, newJamo);
+          if (compoundFinal) {
+            // Replace with compound final
+            const newSyllable = combineJamo(
+              decomposed.initial,
+              decomposed.vowel,
+              compoundFinal,
+            );
+            return currentText.slice(0, -1) + newSyllable;
+          }
+          // Can't form compound - if it's also an initial, start new syllable
+          // Otherwise, replace the final
+          if (isInitial(newJamo)) {
+            return currentText + newJamo;
+          }
+          // Replace the final
+          const newSyllable = combineJamo(
+            decomposed.initial,
+            decomposed.vowel,
+            newJamo,
+          );
+          return currentText.slice(0, -1) + newSyllable;
+        }
+        
+        // If it's only an initial (not a final), start a new syllable
+        if (isInitial(newJamo)) {
+          return currentText + newJamo;
+        }
       }
       
       // Syllable has no final
@@ -188,7 +233,7 @@ export function addJamo(
         return currentText + newJamo;
       }
       
-      // If adding a consonant that can be a final, add it as final
+      // If adding a final to a syllable without a final, add it as final
       if (isFinal(newJamo)) {
         const newSyllable = combineJamo(
           decomposed.initial,
@@ -199,7 +244,7 @@ export function addJamo(
       }
       
       // If it's an initial but not a final, start new syllable
-      if (isInitial(newJamo)) {
+      if (isInitial(newJamo) && !isFinal(newJamo)) {
         return currentText + newJamo;
       }
     }
@@ -211,6 +256,25 @@ export function addJamo(
   if (isInitial(lastChar)) {
     if (isVowel(newJamo)) {
       // Combine initial + vowel
+      // Check if there's a syllable before the initial that has a final
+      if (currentText.length >= 2) {
+        const secondLastChar = currentText[currentText.length - 2];
+        if (isSyllable(secondLastChar)) {
+          const decomposed = decomposeSyllable(secondLastChar);
+          if (decomposed && decomposed.final) {
+            // The syllable before has a final, so we need to preserve it
+            // Combine: syllable with final + initial + vowel
+            const syllableWithFinal = combineJamo(
+              decomposed.initial,
+              decomposed.vowel,
+              decomposed.final,
+            );
+            const newSyllable = combineJamo(lastChar, newJamo, '');
+            return currentText.slice(0, -2) + syllableWithFinal + newSyllable;
+          }
+        }
+      }
+      // No syllable before, just combine initial + vowel
       return currentText.slice(0, -1) + combineJamo(lastChar, newJamo);
     }
     if (isInitial(newJamo)) {
