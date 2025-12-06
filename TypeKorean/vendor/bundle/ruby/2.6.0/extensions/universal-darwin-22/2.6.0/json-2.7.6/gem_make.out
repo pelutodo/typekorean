@@ -1,0 +1,20 @@
+current directory: /Users/nico/typekorean/TypeKorean/vendor/bundle/ruby/2.6.0/gems/json-2.7.6/ext/json/ext/parser
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20251206-50005-18s4uh3.rb extconf.rb
+checking for rb_enc_raise() in ruby.h... yes
+checking for rb_enc_interned_str() in ruby.h... no
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /Users/nico/typekorean/TypeKorean/vendor/bundle/ruby/2.6.0/gems/json-2.7.6/ext/json/ext/parser
+make "DESTDIR=" clean
+
+current directory: /Users/nico/typekorean/TypeKorean/vendor/bundle/ruby/2.6.0/gems/json-2.7.6/ext/json/ext/parser
+make "DESTDIR="
+compiling parser.c
+linking shared-object json/ext/parser.bundle
+ld: warning: directory not found for option '-L/AppleInternal/Library/BuildRoots/97f6331a-ba75-11ed-a4bc-863efbbaf80d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.Internal.sdk/usr/local/lib'
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/nico/typekorean/TypeKorean/vendor/bundle/ruby/2.6.0/gems/json-2.7.6/ext/json/ext/parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 parser.bundle ./.gem.20251206-50005-1kjdxyh/json/ext
