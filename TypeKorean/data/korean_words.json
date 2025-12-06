@@ -1,0 +1,2050 @@
+[
+  {
+    "korean": "안녕하세요",
+    "english": "hello"
+  },
+  {
+    "korean": "안녕",
+    "english": "hi"
+  },
+  {
+    "korean": "감사합니다",
+    "english": "thank you"
+  },
+  {
+    "korean": "고마워",
+    "english": "thanks"
+  },
+  {
+    "korean": "죄송합니다",
+    "english": "sorry"
+  },
+  {
+    "korean": "미안해",
+    "english": "sorry"
+  },
+  {
+    "korean": "네",
+    "english": "yes"
+  },
+  {
+    "korean": "아니요",
+    "english": "no"
+  },
+  {
+    "korean": "물",
+    "english": "water"
+  },
+  {
+    "korean": "사과",
+    "english": "apple"
+  },
+  {
+    "korean": "집",
+    "english": "house"
+  },
+  {
+    "korean": "학교",
+    "english": "school"
+  },
+  {
+    "korean": "친구",
+    "english": "friend"
+  },
+  {
+    "korean": "사랑",
+    "english": "love"
+  },
+  {
+    "korean": "좋아하다",
+    "english": "to like"
+  },
+  {
+    "korean": "먹다",
+    "english": "to eat"
+  },
+  {
+    "korean": "보다",
+    "english": "to see"
+  },
+  {
+    "korean": "가다",
+    "english": "to go"
+  },
+  {
+    "korean": "오다",
+    "english": "to come"
+  },
+  {
+    "korean": "하다",
+    "english": "to do"
+  },
+  {
+    "korean": "있다",
+    "english": "to exist"
+  },
+  {
+    "korean": "없다",
+    "english": "to not exist"
+  },
+  {
+    "korean": "좋다",
+    "english": "good"
+  },
+  {
+    "korean": "나쁘다",
+    "english": "bad"
+  },
+  {
+    "korean": "크다",
+    "english": "big"
+  },
+  {
+    "korean": "작다",
+    "english": "small"
+  },
+  {
+    "korean": "많다",
+    "english": "many"
+  },
+  {
+    "korean": "적다",
+    "english": "few"
+  },
+  {
+    "korean": "새로운",
+    "english": "new"
+  },
+  {
+    "korean": "오래된",
+    "english": "old"
+  },
+  {
+    "korean": "예쁘다",
+    "english": "pretty"
+  },
+  {
+    "korean": "아름답다",
+    "english": "beautiful"
+  },
+  {
+    "korean": "행복하다",
+    "english": "happy"
+  },
+  {
+    "korean": "슬프다",
+    "english": "sad"
+  },
+  {
+    "korean": "힘들다",
+    "english": "difficult"
+  },
+  {
+    "korean": "쉽다",
+    "english": "easy"
+  },
+  {
+    "korean": "빠르다",
+    "english": "fast"
+  },
+  {
+    "korean": "느리다",
+    "english": "slow"
+  },
+  {
+    "korean": "따뜻하다",
+    "english": "warm"
+  },
+  {
+    "korean": "차갑다",
+    "english": "cold"
+  },
+  {
+    "korean": "덥다",
+    "english": "hot"
+  },
+  {
+    "korean": "시원하다",
+    "english": "cool"
+  },
+  {
+    "korean": "맛있다",
+    "english": "delicious"
+  },
+  {
+    "korean": "맛없다",
+    "english": "not delicious"
+  },
+  {
+    "korean": "배고프다",
+    "english": "hungry"
+  },
+  {
+    "korean": "목마르다",
+    "english": "thirsty"
+  },
+  {
+    "korean": "피곤하다",
+    "english": "tired"
+  },
+  {
+    "korean": "졸리다",
+    "english": "sleepy"
+  },
+  {
+    "korean": "기쁘다",
+    "english": "glad"
+  },
+  {
+    "korean": "화나다",
+    "english": "angry"
+  },
+  {
+    "korean": "무섭다",
+    "english": "scary"
+  },
+  {
+    "korean": "재미있다",
+    "english": "fun"
+  },
+  {
+    "korean": "지루하다",
+    "english": "boring"
+  },
+  {
+    "korean": "중요하다",
+    "english": "important"
+  },
+  {
+    "korean": "필요하다",
+    "english": "necessary"
+  },
+  {
+    "korean": "가능하다",
+    "english": "possible"
+  },
+  {
+    "korean": "불가능하다",
+    "english": "impossible"
+  },
+  {
+    "korean": "맞다",
+    "english": "correct"
+  },
+  {
+    "korean": "틀리다",
+    "english": "wrong"
+  },
+  {
+    "korean": "같다",
+    "english": "same"
+  },
+  {
+    "korean": "다르다",
+    "english": "different"
+  },
+  {
+    "korean": "비슷하다",
+    "english": "similar"
+  },
+  {
+    "korean": "가깝다",
+    "english": "close"
+  },
+  {
+    "korean": "멀다",
+    "english": "far"
+  },
+  {
+    "korean": "높다",
+    "english": "high"
+  },
+  {
+    "korean": "낮다",
+    "english": "low"
+  },
+  {
+    "korean": "길다",
+    "english": "long"
+  },
+  {
+    "korean": "짧다",
+    "english": "short"
+  },
+  {
+    "korean": "넓다",
+    "english": "wide"
+  },
+  {
+    "korean": "좁다",
+    "english": "narrow"
+  },
+  {
+    "korean": "깊다",
+    "english": "deep"
+  },
+  {
+    "korean": "얕다",
+    "english": "shallow"
+  },
+  {
+    "korean": "무겁다",
+    "english": "heavy"
+  },
+  {
+    "korean": "가볍다",
+    "english": "light"
+  },
+  {
+    "korean": "딱딱하다",
+    "english": "hard"
+  },
+  {
+    "korean": "부드럽다",
+    "english": "soft"
+  },
+  {
+    "korean": "밝다",
+    "english": "bright"
+  },
+  {
+    "korean": "어둡다",
+    "english": "dark"
+  },
+  {
+    "korean": "조용하다",
+    "english": "quiet"
+  },
+  {
+    "korean": "시끄럽다",
+    "english": "noisy"
+  },
+  {
+    "korean": "깨끗하다",
+    "english": "clean"
+  },
+  {
+    "korean": "더럽다",
+    "english": "dirty"
+  },
+  {
+    "korean": "건강하다",
+    "english": "healthy"
+  },
+  {
+    "korean": "아프다",
+    "english": "sick"
+  },
+  {
+    "korean": "부자",
+    "english": "rich"
+  },
+  {
+    "korean": "가난하다",
+    "english": "poor"
+  },
+  {
+    "korean": "똑똑하다",
+    "english": "smart"
+  },
+  {
+    "korean": "바보",
+    "english": "stupid"
+  },
+  {
+    "korean": "친절하다",
+    "english": "kind"
+  },
+  {
+    "korean": "무례하다",
+    "english": "rude"
+  },
+  {
+    "korean": "용감하다",
+    "english": "brave"
+  },
+  {
+    "korean": "정직하다",
+    "english": "honest"
+  },
+  {
+    "korean": "용서하다",
+    "english": "forgive"
+  },
+  {
+    "korean": "도와주다",
+    "english": "help"
+  },
+  {
+    "korean": "사과하다",
+    "english": "apologize"
+  },
+  {
+    "korean": "감사하다",
+    "english": "thankful"
+  },
+  {
+    "korean": "축하하다",
+    "english": "congratulate"
+  },
+  {
+    "korean": "만나다",
+    "english": "meet"
+  },
+  {
+    "korean": "만들다",
+    "english": "make"
+  },
+  {
+    "korean": "사용하다",
+    "english": "use"
+  },
+  {
+    "korean": "원하다",
+    "english": "want"
+  },
+  {
+    "korean": "싫어하다",
+    "english": "dislike"
+  },
+  {
+    "korean": "사랑하다",
+    "english": "love"
+  },
+  {
+    "korean": "미워하다",
+    "english": "hate"
+  },
+  {
+    "korean": "생각하다",
+    "english": "think"
+  },
+  {
+    "korean": "알다",
+    "english": "know"
+  },
+  {
+    "korean": "모르다",
+    "english": "not know"
+  },
+  {
+    "korean": "기억하다",
+    "english": "remember"
+  },
+  {
+    "korean": "잊다",
+    "english": "forget"
+  },
+  {
+    "korean": "배우다",
+    "english": "learn"
+  },
+  {
+    "korean": "가르치다",
+    "english": "teach"
+  },
+  {
+    "korean": "읽다",
+    "english": "read"
+  },
+  {
+    "korean": "쓰다",
+    "english": "write"
+  },
+  {
+    "korean": "듣다",
+    "english": "listen"
+  },
+  {
+    "korean": "말하다",
+    "english": "speak"
+  },
+  {
+    "korean": "이야기하다",
+    "english": "talk"
+  },
+  {
+    "korean": "질문하다",
+    "english": "ask"
+  },
+  {
+    "korean": "대답하다",
+    "english": "answer"
+  },
+  {
+    "korean": "물어보다",
+    "english": "ask"
+  },
+  {
+    "korean": "알려주다",
+    "english": "tell"
+  },
+  {
+    "korean": "설명하다",
+    "english": "explain"
+  },
+  {
+    "korean": "이해하다",
+    "english": "understand"
+  },
+  {
+    "korean": "시작하다",
+    "english": "start"
+  },
+  {
+    "korean": "끝나다",
+    "english": "finish"
+  },
+  {
+    "korean": "계속하다",
+    "english": "continue"
+  },
+  {
+    "korean": "멈추다",
+    "english": "stop"
+  },
+  {
+    "korean": "기다리다",
+    "english": "wait"
+  },
+  {
+    "korean": "서두르다",
+    "english": "hurry"
+  },
+  {
+    "korean": "늦다",
+    "english": "late"
+  },
+  {
+    "korean": "일찍",
+    "english": "early"
+  },
+  {
+    "korean": "빨리",
+    "english": "quickly"
+  },
+  {
+    "korean": "천천히",
+    "english": "slowly"
+  },
+  {
+    "korean": "자주",
+    "english": "often"
+  },
+  {
+    "korean": "가끔",
+    "english": "sometimes"
+  },
+  {
+    "korean": "항상",
+    "english": "always"
+  },
+  {
+    "korean": "절대",
+    "english": "never"
+  },
+  {
+    "korean": "오늘",
+    "english": "today"
+  },
+  {
+    "korean": "어제",
+    "english": "yesterday"
+  },
+  {
+    "korean": "내일",
+    "english": "tomorrow"
+  },
+  {
+    "korean": "지금",
+    "english": "now"
+  },
+  {
+    "korean": "나중에",
+    "english": "later"
+  },
+  {
+    "korean": "이전에",
+    "english": "before"
+  },
+  {
+    "korean": "이후에",
+    "english": "after"
+  },
+  {
+    "korean": "아침",
+    "english": "morning"
+  },
+  {
+    "korean": "점심",
+    "english": "lunch"
+  },
+  {
+    "korean": "저녁",
+    "english": "evening"
+  },
+  {
+    "korean": "밤",
+    "english": "night"
+  },
+  {
+    "korean": "시간",
+    "english": "time"
+  },
+  {
+    "korean": "날짜",
+    "english": "date"
+  },
+  {
+    "korean": "요일",
+    "english": "day of week"
+  },
+  {
+    "korean": "월",
+    "english": "month"
+  },
+  {
+    "korean": "년",
+    "english": "year"
+  },
+  {
+    "korean": "시",
+    "english": "hour"
+  },
+  {
+    "korean": "분",
+    "english": "minute"
+  },
+  {
+    "korean": "초",
+    "english": "second"
+  },
+  {
+    "korean": "월요일",
+    "english": "Monday"
+  },
+  {
+    "korean": "화요일",
+    "english": "Tuesday"
+  },
+  {
+    "korean": "수요일",
+    "english": "Wednesday"
+  },
+  {
+    "korean": "목요일",
+    "english": "Thursday"
+  },
+  {
+    "korean": "금요일",
+    "english": "Friday"
+  },
+  {
+    "korean": "토요일",
+    "english": "Saturday"
+  },
+  {
+    "korean": "일요일",
+    "english": "Sunday"
+  },
+  {
+    "korean": "일월",
+    "english": "January"
+  },
+  {
+    "korean": "이월",
+    "english": "February"
+  },
+  {
+    "korean": "삼월",
+    "english": "March"
+  },
+  {
+    "korean": "사월",
+    "english": "April"
+  },
+  {
+    "korean": "오월",
+    "english": "May"
+  },
+  {
+    "korean": "유월",
+    "english": "June"
+  },
+  {
+    "korean": "칠월",
+    "english": "July"
+  },
+  {
+    "korean": "팔월",
+    "english": "August"
+  },
+  {
+    "korean": "구월",
+    "english": "September"
+  },
+  {
+    "korean": "시월",
+    "english": "October"
+  },
+  {
+    "korean": "십일월",
+    "english": "November"
+  },
+  {
+    "korean": "십이월",
+    "english": "December"
+  },
+  {
+    "korean": "사람",
+    "english": "person"
+  },
+  {
+    "korean": "남자",
+    "english": "man"
+  },
+  {
+    "korean": "여자",
+    "english": "woman"
+  },
+  {
+    "korean": "아이",
+    "english": "child"
+  },
+  {
+    "korean": "아기",
+    "english": "baby"
+  },
+  {
+    "korean": "학생",
+    "english": "student"
+  },
+  {
+    "korean": "선생님",
+    "english": "teacher"
+  },
+  {
+    "korean": "의사",
+    "english": "doctor"
+  },
+  {
+    "korean": "간호사",
+    "english": "nurse"
+  },
+  {
+    "korean": "엄마",
+    "english": "mom"
+  },
+  {
+    "korean": "아빠",
+    "english": "dad"
+  },
+  {
+    "korean": "형",
+    "english": "older brother"
+  },
+  {
+    "korean": "누나",
+    "english": "older sister"
+  },
+  {
+    "korean": "오빠",
+    "english": "older brother"
+  },
+  {
+    "korean": "언니",
+    "english": "older sister"
+  },
+  {
+    "korean": "동생",
+    "english": "younger sibling"
+  },
+  {
+    "korean": "남동생",
+    "english": "younger brother"
+  },
+  {
+    "korean": "여동생",
+    "english": "younger sister"
+  },
+  {
+    "korean": "할아버지",
+    "english": "grandfather"
+  },
+  {
+    "korean": "할머니",
+    "english": "grandmother"
+  },
+  {
+    "korean": "고양이",
+    "english": "cat"
+  },
+  {
+    "korean": "강아지",
+    "english": "dog"
+  },
+  {
+    "korean": "새",
+    "english": "bird"
+  },
+  {
+    "korean": "물고기",
+    "english": "fish"
+  },
+  {
+    "korean": "나무",
+    "english": "tree"
+  },
+  {
+    "korean": "꽃",
+    "english": "flower"
+  },
+  {
+    "korean": "풀",
+    "english": "grass"
+  },
+  {
+    "korean": "하늘",
+    "english": "sky"
+  },
+  {
+    "korean": "구름",
+    "english": "cloud"
+  },
+  {
+    "korean": "태양",
+    "english": "sun"
+  },
+  {
+    "korean": "달",
+    "english": "moon"
+  },
+  {
+    "korean": "별",
+    "english": "star"
+  },
+  {
+    "korean": "비",
+    "english": "rain"
+  },
+  {
+    "korean": "눈",
+    "english": "snow"
+  },
+  {
+    "korean": "바람",
+    "english": "wind"
+  },
+  {
+    "korean": "번개",
+    "english": "lightning"
+  },
+  {
+    "korean": "천둥",
+    "english": "thunder"
+  },
+  {
+    "korean": "날씨",
+    "english": "weather"
+  },
+  {
+    "korean": "맑다",
+    "english": "clear"
+  },
+  {
+    "korean": "흐리다",
+    "english": "cloudy"
+  },
+  {
+    "korean": "봄",
+    "english": "spring"
+  },
+  {
+    "korean": "여름",
+    "english": "summer"
+  },
+  {
+    "korean": "가을",
+    "english": "autumn"
+  },
+  {
+    "korean": "겨울",
+    "english": "winter"
+  },
+  {
+    "korean": "음식",
+    "english": "food"
+  },
+  {
+    "korean": "밥",
+    "english": "rice"
+  },
+  {
+    "korean": "국",
+    "english": "soup"
+  },
+  {
+    "korean": "고기",
+    "english": "meat"
+  },
+  {
+    "korean": "생선",
+    "english": "fish"
+  },
+  {
+    "korean": "야채",
+    "english": "vegetable"
+  },
+  {
+    "korean": "과일",
+    "english": "fruit"
+  },
+  {
+    "korean": "빵",
+    "english": "bread"
+  },
+  {
+    "korean": "우유",
+    "english": "milk"
+  },
+  {
+    "korean": "차",
+    "english": "tea"
+  },
+  {
+    "korean": "커피",
+    "english": "coffee"
+  },
+  {
+    "korean": "주스",
+    "english": "juice"
+  },
+  {
+    "korean": "맥주",
+    "english": "beer"
+  },
+  {
+    "korean": "소주",
+    "english": "soju"
+  },
+  {
+    "korean": "김치",
+    "english": "kimchi"
+  },
+  {
+    "korean": "불고기",
+    "english": "bulgogi"
+  },
+  {
+    "korean": "비빔밥",
+    "english": "bibimbap"
+  },
+  {
+    "korean": "김밥",
+    "english": "kimbap"
+  },
+  {
+    "korean": "라면",
+    "english": "ramen"
+  },
+  {
+    "korean": "떡볶이",
+    "english": "tteokbokki"
+  },
+  {
+    "korean": "치킨",
+    "english": "chicken"
+  },
+  {
+    "korean": "피자",
+    "english": "pizza"
+  },
+  {
+    "korean": "햄버거",
+    "english": "hamburger"
+  },
+  {
+    "korean": "과자",
+    "english": "snack"
+  },
+  {
+    "korean": "사탕",
+    "english": "candy"
+  },
+  {
+    "korean": "초콜릿",
+    "english": "chocolate"
+  },
+  {
+    "korean": "아이스크림",
+    "english": "ice cream"
+  },
+  {
+    "korean": "케이크",
+    "english": "cake"
+  },
+  {
+    "korean": "바나나",
+    "english": "banana"
+  },
+  {
+    "korean": "오렌지",
+    "english": "orange"
+  },
+  {
+    "korean": "포도",
+    "english": "grape"
+  },
+  {
+    "korean": "딸기",
+    "english": "strawberry"
+  },
+  {
+    "korean": "수박",
+    "english": "watermelon"
+  },
+  {
+    "korean": "복숭아",
+    "english": "peach"
+  },
+  {
+    "korean": "배",
+    "english": "pear"
+  },
+  {
+    "korean": "체리",
+    "english": "cherry"
+  },
+  {
+    "korean": "키위",
+    "english": "kiwi"
+  },
+  {
+    "korean": "파인애플",
+    "english": "pineapple"
+  },
+  {
+    "korean": "망고",
+    "english": "mango"
+  },
+  {
+    "korean": "레몬",
+    "english": "lemon"
+  },
+  {
+    "korean": "당근",
+    "english": "carrot"
+  },
+  {
+    "korean": "양파",
+    "english": "onion"
+  },
+  {
+    "korean": "마늘",
+    "english": "garlic"
+  },
+  {
+    "korean": "감자",
+    "english": "potato"
+  },
+  {
+    "korean": "고구마",
+    "english": "sweet potato"
+  },
+  {
+    "korean": "토마토",
+    "english": "tomato"
+  },
+  {
+    "korean": "오이",
+    "english": "cucumber"
+  },
+  {
+    "korean": "상추",
+    "english": "lettuce"
+  },
+  {
+    "korean": "배추",
+    "english": "cabbage"
+  },
+  {
+    "korean": "브로콜리",
+    "english": "broccoli"
+  },
+  {
+    "korean": "버섯",
+    "english": "mushroom"
+  },
+  {
+    "korean": "고추",
+    "english": "pepper"
+  },
+  {
+    "korean": "옷",
+    "english": "clothes"
+  },
+  {
+    "korean": "셔츠",
+    "english": "shirt"
+  },
+  {
+    "korean": "바지",
+    "english": "pants"
+  },
+  {
+    "korean": "치마",
+    "english": "skirt"
+  },
+  {
+    "korean": "드레스",
+    "english": "dress"
+  },
+  {
+    "korean": "재킷",
+    "english": "jacket"
+  },
+  {
+    "korean": "코트",
+    "english": "coat"
+  },
+  {
+    "korean": "모자",
+    "english": "hat"
+  },
+  {
+    "korean": "신발",
+    "english": "shoes"
+  },
+  {
+    "korean": "부츠",
+    "english": "boots"
+  },
+  {
+    "korean": "양말",
+    "english": "socks"
+  },
+  {
+    "korean": "장갑",
+    "english": "gloves"
+  },
+  {
+    "korean": "스카프",
+    "english": "scarf"
+  },
+  {
+    "korean": "가방",
+    "english": "bag"
+  },
+  {
+    "korean": "지갑",
+    "english": "wallet"
+  },
+  {
+    "korean": "시계",
+    "english": "watch"
+  },
+  {
+    "korean": "안경",
+    "english": "glasses"
+  },
+  {
+    "korean": "귀걸이",
+    "english": "earrings"
+  },
+  {
+    "korean": "목걸이",
+    "english": "necklace"
+  },
+  {
+    "korean": "반지",
+    "english": "ring"
+  },
+  {
+    "korean": "방",
+    "english": "room"
+  },
+  {
+    "korean": "침실",
+    "english": "bedroom"
+  },
+  {
+    "korean": "거실",
+    "english": "living room"
+  },
+  {
+    "korean": "부엌",
+    "english": "kitchen"
+  },
+  {
+    "korean": "화장실",
+    "english": "bathroom"
+  },
+  {
+    "korean": "욕조",
+    "english": "bathtub"
+  },
+  {
+    "korean": "샤워",
+    "english": "shower"
+  },
+  {
+    "korean": "침대",
+    "english": "bed"
+  },
+  {
+    "korean": "이불",
+    "english": "blanket"
+  },
+  {
+    "korean": "베개",
+    "english": "pillow"
+  },
+  {
+    "korean": "의자",
+    "english": "chair"
+  },
+  {
+    "korean": "테이블",
+    "english": "table"
+  },
+  {
+    "korean": "소파",
+    "english": "sofa"
+  },
+  {
+    "korean": "책상",
+    "english": "desk"
+  },
+  {
+    "korean": "책장",
+    "english": "bookshelf"
+  },
+  {
+    "korean": "냉장고",
+    "english": "refrigerator"
+  },
+  {
+    "korean": "전자레인지",
+    "english": "microwave"
+  },
+  {
+    "korean": "세탁기",
+    "english": "washing machine"
+  },
+  {
+    "korean": "청소기",
+    "english": "vacuum cleaner"
+  },
+  {
+    "korean": "텔레비전",
+    "english": "television"
+  },
+  {
+    "korean": "컴퓨터",
+    "english": "computer"
+  },
+  {
+    "korean": "노트북",
+    "english": "laptop"
+  },
+  {
+    "korean": "스마트폰",
+    "english": "smartphone"
+  },
+  {
+    "korean": "태블릿",
+    "english": "tablet"
+  },
+  {
+    "korean": "인터넷",
+    "english": "internet"
+  },
+  {
+    "korean": "이메일",
+    "english": "email"
+  },
+  {
+    "korean": "메시지",
+    "english": "message"
+  },
+  {
+    "korean": "전화",
+    "english": "phone"
+  },
+  {
+    "korean": "전화하다",
+    "english": "call"
+  },
+  {
+    "korean": "문자",
+    "english": "text message"
+  },
+  {
+    "korean": "카메라",
+    "english": "camera"
+  },
+  {
+    "korean": "사진",
+    "english": "photo"
+  },
+  {
+    "korean": "영화",
+    "english": "movie"
+  },
+  {
+    "korean": "음악",
+    "english": "music"
+  },
+  {
+    "korean": "노래",
+    "english": "song"
+  },
+  {
+    "korean": "책",
+    "english": "book"
+  },
+  {
+    "korean": "신문",
+    "english": "newspaper"
+  },
+  {
+    "korean": "잡지",
+    "english": "magazine"
+  },
+  {
+    "korean": "펜",
+    "english": "pen"
+  },
+  {
+    "korean": "연필",
+    "english": "pencil"
+  },
+  {
+    "korean": "종이",
+    "english": "paper"
+  },
+  {
+    "korean": "가위",
+    "english": "scissors"
+  },
+  {
+    "korean": "풀",
+    "english": "glue"
+  },
+  {
+    "korean": "자",
+    "english": "ruler"
+  },
+  {
+    "korean": "지우개",
+    "english": "eraser"
+  },
+  {
+    "korean": "공책",
+    "english": "notebook"
+  },
+  {
+    "korean": "대학교",
+    "english": "university"
+  },
+  {
+    "korean": "교실",
+    "english": "classroom"
+  },
+  {
+    "korean": "도서관",
+    "english": "library"
+  },
+  {
+    "korean": "운동장",
+    "english": "playground"
+  },
+  {
+    "korean": "교수",
+    "english": "professor"
+  },
+  {
+    "korean": "수업",
+    "english": "class"
+  },
+  {
+    "korean": "과목",
+    "english": "subject"
+  },
+  {
+    "korean": "숙제",
+    "english": "homework"
+  },
+  {
+    "korean": "시험",
+    "english": "exam"
+  },
+  {
+    "korean": "성적",
+    "english": "grade"
+  },
+  {
+    "korean": "공부하다",
+    "english": "study"
+  },
+  {
+    "korean": "그리다",
+    "english": "draw"
+  },
+  {
+    "korean": "색깔",
+    "english": "color"
+  },
+  {
+    "korean": "빨간색",
+    "english": "red"
+  },
+  {
+    "korean": "주황색",
+    "english": "orange"
+  },
+  {
+    "korean": "노란색",
+    "english": "yellow"
+  },
+  {
+    "korean": "초록색",
+    "english": "green"
+  },
+  {
+    "korean": "파란색",
+    "english": "blue"
+  },
+  {
+    "korean": "보라색",
+    "english": "purple"
+  },
+  {
+    "korean": "분홍색",
+    "english": "pink"
+  },
+  {
+    "korean": "검은색",
+    "english": "black"
+  },
+  {
+    "korean": "흰색",
+    "english": "white"
+  },
+  {
+    "korean": "회색",
+    "english": "gray"
+  },
+  {
+    "korean": "갈색",
+    "english": "brown"
+  },
+  {
+    "korean": "숫자",
+    "english": "number"
+  },
+  {
+    "korean": "영",
+    "english": "zero"
+  },
+  {
+    "korean": "일",
+    "english": "one"
+  },
+  {
+    "korean": "이",
+    "english": "two"
+  },
+  {
+    "korean": "삼",
+    "english": "three"
+  },
+  {
+    "korean": "사",
+    "english": "four"
+  },
+  {
+    "korean": "오",
+    "english": "five"
+  },
+  {
+    "korean": "육",
+    "english": "six"
+  },
+  {
+    "korean": "칠",
+    "english": "seven"
+  },
+  {
+    "korean": "팔",
+    "english": "eight"
+  },
+  {
+    "korean": "구",
+    "english": "nine"
+  },
+  {
+    "korean": "십",
+    "english": "ten"
+  },
+  {
+    "korean": "십일",
+    "english": "eleven"
+  },
+  {
+    "korean": "십이",
+    "english": "twelve"
+  },
+  {
+    "korean": "이십",
+    "english": "twenty"
+  },
+  {
+    "korean": "삼십",
+    "english": "thirty"
+  },
+  {
+    "korean": "사십",
+    "english": "forty"
+  },
+  {
+    "korean": "오십",
+    "english": "fifty"
+  },
+  {
+    "korean": "육십",
+    "english": "sixty"
+  },
+  {
+    "korean": "칠십",
+    "english": "seventy"
+  },
+  {
+    "korean": "팔십",
+    "english": "eighty"
+  },
+  {
+    "korean": "구십",
+    "english": "ninety"
+  },
+  {
+    "korean": "백",
+    "english": "hundred"
+  },
+  {
+    "korean": "천",
+    "english": "thousand"
+  },
+  {
+    "korean": "만",
+    "english": "ten thousand"
+  },
+  {
+    "korean": "백만",
+    "english": "million"
+  },
+  {
+    "korean": "십억",
+    "english": "billion"
+  },
+  {
+    "korean": "첫 번째",
+    "english": "first"
+  },
+  {
+    "korean": "두 번째",
+    "english": "second"
+  },
+  {
+    "korean": "세 번째",
+    "english": "third"
+  },
+  {
+    "korean": "네 번째",
+    "english": "fourth"
+  },
+  {
+    "korean": "다섯 번째",
+    "english": "fifth"
+  },
+  {
+    "korean": "몇",
+    "english": "how many"
+  },
+  {
+    "korean": "얼마",
+    "english": "how much"
+  },
+  {
+    "korean": "어디",
+    "english": "where"
+  },
+  {
+    "korean": "언제",
+    "english": "when"
+  },
+  {
+    "korean": "누구",
+    "english": "who"
+  },
+  {
+    "korean": "무엇",
+    "english": "what"
+  },
+  {
+    "korean": "어떻게",
+    "english": "how"
+  },
+  {
+    "korean": "왜",
+    "english": "why"
+  },
+  {
+    "korean": "어느",
+    "english": "which"
+  },
+  {
+    "korean": "어떤",
+    "english": "what kind"
+  },
+  {
+    "korean": "몇 시",
+    "english": "what time"
+  },
+  {
+    "korean": "이것",
+    "english": "this"
+  },
+  {
+    "korean": "그것",
+    "english": "that"
+  },
+  {
+    "korean": "저것",
+    "english": "that"
+  },
+  {
+    "korean": "여기",
+    "english": "here"
+  },
+  {
+    "korean": "거기",
+    "english": "there"
+  },
+  {
+    "korean": "저기",
+    "english": "over there"
+  },
+  {
+    "korean": "이쪽",
+    "english": "this way"
+  },
+  {
+    "korean": "그쪽",
+    "english": "that way"
+  },
+  {
+    "korean": "저쪽",
+    "english": "that way"
+  },
+  {
+    "korean": "모레",
+    "english": "day after tomorrow"
+  },
+  {
+    "korean": "그저께",
+    "english": "day before yesterday"
+  },
+  {
+    "korean": "이번 주",
+    "english": "this week"
+  },
+  {
+    "korean": "지난 주",
+    "english": "last week"
+  },
+  {
+    "korean": "다음 주",
+    "english": "next week"
+  },
+  {
+    "korean": "이번 달",
+    "english": "this month"
+  },
+  {
+    "korean": "지난 달",
+    "english": "last month"
+  },
+  {
+    "korean": "다음 달",
+    "english": "next month"
+  },
+  {
+    "korean": "올해",
+    "english": "this year"
+  },
+  {
+    "korean": "작년",
+    "english": "last year"
+  },
+  {
+    "korean": "내년",
+    "english": "next year"
+  },
+  {
+    "korean": "요즘",
+    "english": "these days"
+  },
+  {
+    "korean": "최근",
+    "english": "recently"
+  },
+  {
+    "korean": "예전에",
+    "english": "in the past"
+  },
+  {
+    "korean": "곧",
+    "english": "soon"
+  },
+  {
+    "korean": "바로",
+    "english": "right away"
+  },
+  {
+    "korean": "즉시",
+    "english": "immediately"
+  },
+  {
+    "korean": "아까",
+    "english": "earlier"
+  },
+  {
+    "korean": "때때로",
+    "english": "occasionally"
+  },
+  {
+    "korean": "거의",
+    "english": "almost"
+  },
+  {
+    "korean": "전혀",
+    "english": "not at all"
+  },
+  {
+    "korean": "이미",
+    "english": "already"
+  },
+  {
+    "korean": "아직",
+    "english": "yet"
+  },
+  {
+    "korean": "벌써",
+    "english": "already"
+  },
+  {
+    "korean": "서둘러",
+    "english": "hurry"
+  },
+  {
+    "korean": "여유롭게",
+    "english": "leisurely"
+  },
+  {
+    "korean": "조용히",
+    "english": "quietly"
+  },
+  {
+    "korean": "시끄럽게",
+    "english": "noisily"
+  },
+  {
+    "korean": "크게",
+    "english": "loudly"
+  },
+  {
+    "korean": "작게",
+    "english": "quietly"
+  },
+  {
+    "korean": "높게",
+    "english": "highly"
+  },
+  {
+    "korean": "낮게",
+    "english": "lowly"
+  },
+  {
+    "korean": "깊게",
+    "english": "deeply"
+  },
+  {
+    "korean": "얕게",
+    "english": "shallowly"
+  },
+  {
+    "korean": "넓게",
+    "english": "widely"
+  },
+  {
+    "korean": "좁게",
+    "english": "narrowly"
+  },
+  {
+    "korean": "길게",
+    "english": "longly"
+  },
+  {
+    "korean": "짧게",
+    "english": "shortly"
+  },
+  {
+    "korean": "무겁게",
+    "english": "heavily"
+  },
+  {
+    "korean": "가볍게",
+    "english": "lightly"
+  },
+  {
+    "korean": "딱딱하게",
+    "english": "hardly"
+  },
+  {
+    "korean": "부드럽게",
+    "english": "softly"
+  },
+  {
+    "korean": "뜨겁게",
+    "english": "hotly"
+  },
+  {
+    "korean": "차갑게",
+    "english": "coldly"
+  },
+  {
+    "korean": "따뜻하게",
+    "english": "warmly"
+  },
+  {
+    "korean": "시원하게",
+    "english": "coolly"
+  },
+  {
+    "korean": "밝게",
+    "english": "brightly"
+  },
+  {
+    "korean": "어둡게",
+    "english": "darkly"
+  },
+  {
+    "korean": "깨끗하게",
+    "english": "cleanly"
+  },
+  {
+    "korean": "더럽게",
+    "english": "dirtily"
+  },
+  {
+    "korean": "건강하게",
+    "english": "healthily"
+  },
+  {
+    "korean": "아프게",
+    "english": "sickly"
+  },
+  {
+    "korean": "똑똑하게",
+    "english": "smartly"
+  },
+  {
+    "korean": "바보같이",
+    "english": "stupidly"
+  },
+  {
+    "korean": "친절하게",
+    "english": "kindly"
+  },
+  {
+    "korean": "무례하게",
+    "english": "rudely"
+  },
+  {
+    "korean": "용감하게",
+    "english": "bravely"
+  },
+  {
+    "korean": "겁쟁이처럼",
+    "english": "cowardly"
+  },
+  {
+    "korean": "정직하게",
+    "english": "honestly"
+  },
+  {
+    "korean": "거짓말처럼",
+    "english": "lyingly"
+  },
+  {
+    "korean": "용서하며",
+    "english": "forgivingly"
+  },
+  {
+    "korean": "도와주며",
+    "english": "helpfully"
+  },
+  {
+    "korean": "사과하며",
+    "english": "apologetically"
+  },
+  {
+    "korean": "감사하며",
+    "english": "thankfully"
+  },
+  {
+    "korean": "축하하며",
+    "english": "congratulatorily"
+  },
+  {
+    "korean": "만나며",
+    "english": "meeting"
+  },
+  {
+    "korean": "만들며",
+    "english": "making"
+  },
+  {
+    "korean": "사용하며",
+    "english": "using"
+  },
+  {
+    "korean": "필요하며",
+    "english": "needing"
+  },
+  {
+    "korean": "원하며",
+    "english": "wanting"
+  },
+  {
+    "korean": "좋아하며",
+    "english": "liking"
+  },
+  {
+    "korean": "싫어하며",
+    "english": "disliking"
+  },
+  {
+    "korean": "사랑하며",
+    "english": "loving"
+  },
+  {
+    "korean": "미워하며",
+    "english": "hating"
+  },
+  {
+    "korean": "생각하며",
+    "english": "thinking"
+  },
+  {
+    "korean": "알며",
+    "english": "knowing"
+  },
+  {
+    "korean": "모르며",
+    "english": "not knowing"
+  },
+  {
+    "korean": "기억하며",
+    "english": "remembering"
+  },
+  {
+    "korean": "잊으며",
+    "english": "forgetting"
+  },
+  {
+    "korean": "배우며",
+    "english": "learning"
+  },
+  {
+    "korean": "가르치며",
+    "english": "teaching"
+  },
+  {
+    "korean": "읽으며",
+    "english": "reading"
+  },
+  {
+    "korean": "쓰며",
+    "english": "writing"
+  },
+  {
+    "korean": "들으며",
+    "english": "listening"
+  },
+  {
+    "korean": "말하며",
+    "english": "speaking"
+  },
+  {
+    "korean": "이야기하며",
+    "english": "talking"
+  },
+  {
+    "korean": "질문하며",
+    "english": "asking"
+  },
+  {
+    "korean": "대답하며",
+    "english": "answering"
+  },
+  {
+    "korean": "물어보며",
+    "english": "asking"
+  },
+  {
+    "korean": "알려주며",
+    "english": "telling"
+  },
+  {
+    "korean": "설명하며",
+    "english": "explaining"
+  },
+  {
+    "korean": "이해하며",
+    "english": "understanding"
+  },
+  {
+    "korean": "모르며",
+    "english": "not understanding"
+  },
+  {
+    "korean": "시작하며",
+    "english": "starting"
+  },
+  {
+    "korean": "끝나며",
+    "english": "finishing"
+  },
+  {
+    "korean": "계속하며",
+    "english": "continuing"
+  },
+  {
+    "korean": "멈추며",
+    "english": "stopping"
+  },
+  {
+    "korean": "기다리며",
+    "english": "waiting"
+  },
+  {
+    "korean": "서두르며",
+    "english": "hurrying"
+  },
+  {
+    "korean": "늦으며",
+    "english": "being late"
+  }
+]
