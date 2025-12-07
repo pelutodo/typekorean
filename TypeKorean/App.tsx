@@ -206,14 +206,14 @@ function AppContent() {
               </Text>
               <View style={styles.koreanTextContainer}>
                 <Text style={styles.koreanText}>{currentWord.korean}</Text>
-                <TouchableOpacity
-                  style={styles.speakerButton}
-                  onPress={handleSpeak}
-                  activeOpacity={0.7}>
-                  <Text style={styles.speakerIcon}>🔊</Text>
-                </TouchableOpacity>
                 {isMatch && <Text style={styles.checkEmoji}>✅</Text>}
               </View>
+              <TouchableOpacity
+                style={styles.speakerButton}
+                onPress={handleSpeak}
+                activeOpacity={0.7}>
+                <Text style={styles.speakerIcon}>🔊</Text>
+              </TouchableOpacity>
               <Text style={styles.englishHint}>{currentWord.english}</Text>
             </>
           ) : (
@@ -290,11 +290,25 @@ const styles = StyleSheet.create({
     fontSize: 48,
   },
   speakerButton: {
-    padding: 8,
-    marginLeft: 8,
+    backgroundColor: '#2196F3',
+    borderRadius: 20,
+    width: 40,
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 12,
+    marginBottom: 8,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
   },
   speakerIcon: {
-    fontSize: 24,
+    fontSize: 20,
   },
   checkEmoji: {
     fontSize: 40,
