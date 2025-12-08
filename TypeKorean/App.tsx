@@ -31,6 +31,7 @@ function App() {
 }
 
 function AppContent() {
+  const [currentPage, setCurrentPage] = useState<'home' | 'typing'>('typing');
   const [text, setText] = useState('');
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [wordsBatch, setWordsBatch] = useState<Word[]>([]);
@@ -184,15 +185,61 @@ function AppContent() {
       }
     });
 
+  const handleHome = () => {
+    setCurrentPage('home');
+  };
+
+  const handleStartTyping = () => {
+    setCurrentPage('typing');
+  };
+
+  // Home page component
+  if (currentPage === 'home') {
+    return (
+      <View style={styles.container}>
+        <View style={[styles.header, { paddingTop: insets.top }]}>
+          <View style={styles.headerLeft} />
+          <View style={styles.headerRight}>
+            <TouchableOpacity
+              style={styles.homeButton}
+              onPress={handleStartTyping}
+              activeOpacity={0.7}>
+              <Text style={styles.homeButtonText}>Start</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+        <View style={styles.homeContent}>
+          <Text style={styles.homeTitle}>Type Korean</Text>
+          <Text style={styles.homeSubtitle}>Practice typing Korean words</Text>
+          <TouchableOpacity
+            style={styles.startButton}
+            onPress={handleStartTyping}
+            activeOpacity={0.8}>
+            <Text style={styles.startButtonText}>Start Typing</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    );
+  }
+
+  // Typing page
   return (
     <View style={styles.container}>
       <View style={[styles.header, { paddingTop: insets.top }]}>
         <TouchableOpacity
-          style={styles.skipButton}
-          onPress={handleSkip}
+          style={styles.homeButton}
+          onPress={handleHome}
           activeOpacity={0.7}>
-          <Text style={styles.skipButtonText}>Skip</Text>
+          <Text style={styles.homeButtonText}>🏠</Text>
         </TouchableOpacity>
+        <View style={styles.headerRight}>
+          <TouchableOpacity
+            style={styles.skipButton}
+            onPress={handleSkip}
+            activeOpacity={0.7}>
+            <Text style={styles.skipButtonText}>Skip</Text>
+          </TouchableOpacity>
+        </View>
       </View>
       <View style={styles.content}>
         <GestureDetector gesture={swipeGesture}>
@@ -250,9 +297,26 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: 'row',
-    justifyContent: 'flex-end',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     paddingHorizontal: 16,
     paddingBottom: 8,
+  },
+  headerLeft: {
+    flex: 1,
+  },
+  headerRight: {
+    flex: 1,
+    alignItems: 'flex-end',
+  },
+  homeButton: {
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    borderRadius: 20,
+    backgroundColor: '#E0E0E0',
+  },
+  homeButtonText: {
+    fontSize: 20,
   },
   skipButton: {
     paddingHorizontal: 20,
@@ -264,6 +328,43 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
     color: '#424242',
+  },
+  homeContent: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 32,
+  },
+  homeTitle: {
+    fontSize: 48,
+    fontWeight: 'bold',
+    color: '#212121',
+    marginBottom: 16,
+  },
+  homeSubtitle: {
+    fontSize: 20,
+    color: '#757575',
+    marginBottom: 48,
+    textAlign: 'center',
+  },
+  startButton: {
+    paddingHorizontal: 40,
+    paddingVertical: 16,
+    borderRadius: 30,
+    backgroundColor: '#2196F3',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  startButtonText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
   },
   content: {
     flex: 1,
