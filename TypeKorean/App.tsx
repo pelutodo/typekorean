@@ -10,6 +10,7 @@ import { StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-nativ
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { GestureHandlerRootView, GestureDetector, Gesture } from 'react-native-gesture-handler';
 import KoreanKeyboard from './components/KoreanKeyboard';
+import HomePage from './components/HomePage';
 import { addJamo, handleBackspace as handleHangulBackspace } from './utils/hangulComposer';
 import {
   initializeDatabase,
@@ -189,37 +190,14 @@ function AppContent() {
     setCurrentPage('home');
   };
 
-  const handleStartTyping = () => {
+  const handleStartTyping = (vocabularySetId?: string) => {
     setCurrentPage('typing');
+    // TODO: Use vocabularySetId to filter/load specific vocabulary set
   };
 
   // Home page component
   if (currentPage === 'home') {
-    return (
-      <View style={styles.container}>
-        <View style={[styles.header, { paddingTop: insets.top }]}>
-          <View style={styles.headerLeft} />
-          <View style={styles.headerRight}>
-            <TouchableOpacity
-              style={styles.homeButton}
-              onPress={handleStartTyping}
-              activeOpacity={0.7}>
-              <Text style={styles.homeButtonText}>Start</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-        <View style={styles.homeContent}>
-          <Text style={styles.homeTitle}>Type Korean</Text>
-          <Text style={styles.homeSubtitle}>Practice typing Korean words</Text>
-          <TouchableOpacity
-            style={styles.startButton}
-            onPress={handleStartTyping}
-            activeOpacity={0.8}>
-            <Text style={styles.startButtonText}>Start Typing</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
-    );
+    return <HomePage onStartTyping={handleStartTyping} />;
   }
 
   // Typing page
@@ -328,43 +306,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
     color: '#424242',
-  },
-  homeContent: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingHorizontal: 32,
-  },
-  homeTitle: {
-    fontSize: 48,
-    fontWeight: 'bold',
-    color: '#212121',
-    marginBottom: 16,
-  },
-  homeSubtitle: {
-    fontSize: 20,
-    color: '#757575',
-    marginBottom: 48,
-    textAlign: 'center',
-  },
-  startButton: {
-    paddingHorizontal: 40,
-    paddingVertical: 16,
-    borderRadius: 30,
-    backgroundColor: '#2196F3',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
-  },
-  startButtonText: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: '#FFFFFF',
   },
   content: {
     flex: 1,
