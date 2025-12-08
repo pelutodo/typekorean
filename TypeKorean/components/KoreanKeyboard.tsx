@@ -5,7 +5,7 @@
  * @format
  */
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   StyleSheet,
   Text,
@@ -21,10 +21,21 @@ interface KoreanKeyboardProps {
   onEnter?: () => void;
 }
 
-// Korean keyboard layout (2-set keyboard)
-const KEYBOARD_LAYOUT = [
+// Base Korean keyboard layout (2-set keyboard)
+const BASE_KEYBOARD_LAYOUT = [
   ['ㅂ', 'ㅈ', 'ㄷ', 'ㄱ', 'ㅅ', 'ㅛ', 'ㅕ', 'ㅑ', 'ㅐ', 'ㅔ'],
   ['ㅁ', 'ㄴ', 'ㅇ', 'ㄹ', 'ㅎ', 'ㅗ', 'ㅓ', 'ㅏ', 'ㅣ'],
+  ['ㅋ', 'ㅌ', 'ㅊ', 'ㅍ', 'ㅠ', 'ㅜ', 'ㅡ'],
+];
+
+// Shift keyboard layout (standard Korean Dubeolsik shift mapping)
+// Same structure as base layout, but with shifted characters
+// Row 1: ㅂ→ㅃ, ㅈ→ㅉ, ㄷ→ㄸ, ㄱ→ㄲ, ㅅ→ㅆ, ㅛ→ㅖ, ㅕ→ㅒ, ㅑ→ㅑ, ㅐ→ㅘ, ㅔ→ㅙ
+// Row 2: Consonants stay same, ㅗ→ㅝ, ㅓ→ㅞ, ㅏ→ㅟ, ㅣ→ㅢ
+// Row 3: All stay same (no shift versions)
+const SHIFT_KEYBOARD_LAYOUT = [
+  ['ㅃ', 'ㅉ', 'ㄸ', 'ㄲ', 'ㅆ', 'ㅖ', 'ㅒ', 'ㅑ', 'ㅘ', 'ㅙ'],
+  ['ㅁ', 'ㄴ', 'ㅇ', 'ㄹ', 'ㅎ', 'ㅝ', 'ㅞ', 'ㅟ', 'ㅢ'],
   ['ㅋ', 'ㅌ', 'ㅊ', 'ㅍ', 'ㅠ', 'ㅜ', 'ㅡ'],
 ];
 
@@ -34,12 +45,17 @@ function KoreanKeyboard({
   onSpace,
   onEnter,
 }: KoreanKeyboardProps) {
+  const [isShiftPressed, setIsShiftPressed] = useState(false);
+
   useEffect(() => {
     initializeTypingSound();
     return () => {
       releaseTypingSound();
     };
   }, []);
+
+  // Use shift layout if shift is pressed, otherwise use base layout
+  const currentLayout = isShiftPressed ? SHIFT_KEYBOARD_LAYOUT : BASE_KEYBOARD_LAYOUT;
 
   const handleKeyPress = (key: string) => {
     playTypingSound();
@@ -67,8 +83,13 @@ function KoreanKeyboard({
     }
   };
 
+  const handleShift = () => {
+    playTypingSound();
+    setIsShiftPressed(prev => !prev);
+  };
+
   const renderKey = (key: string, index: number) => {
-    const isSpecialKey = key === 'backspace' || key === 'space' || key === 'enter';
+    const isSpecialKey = key === 'backspace' || key === 'space' || key === 'enter' || key === 'shift';
     
     return (
       <TouchableOpacity
@@ -78,6 +99,8 @@ function KoreanKeyboard({
           isSpecialKey && styles.specialKey,
           key === 'space' && styles.spaceKey,
           key === 'backspace' && styles.backspaceKey,
+          key === 'shift' && styles.shiftKey,
+          key === 'shift' && isShiftPressed && styles.shiftKeyActive,
         ]}
         onPress={() => {
           if (key === 'backspace') {
@@ -87,13 +110,19 @@ function KoreanKeyboard({
           } else if (key === 'enter') {
             // Enter key is non-functional
             return;
+          } else if (key === 'shift') {
+            handleShift();
           } else {
             handleKeyPress(key);
+            // Auto-release shift after typing a character
+            if (isShiftPressed) {
+              setIsShiftPressed(false);
+            }
           }
         }}
         activeOpacity={0.7}>
         <Text style={styles.keyText}>
-          {key === 'backspace' ? '⌫' : key === 'space' ? 'Space' : key === 'enter' ? '↵' : key}
+          {key === 'backspace' ? '⌫' : key === 'space' ? 'Space' : key === 'enter' ? '↵' : key === 'shift' ? '⇧' : key}
         </Text>
       </TouchableOpacity>
     );
@@ -102,10 +131,11 @@ function KoreanKeyboard({
   return (
     <View style={styles.container}>
       {/* Korean character rows */}
-      {KEYBOARD_LAYOUT.map((row, rowIndex) => (
+      {currentLayout.map((row, rowIndex) => (
         <View key={rowIndex} style={styles.row}>
+          {rowIndex === currentLayout.length - 1 && renderKey('shift', -1)}
           {row.map((char, charIndex) => renderKey(char, charIndex))}
-          {rowIndex === KEYBOARD_LAYOUT.length - 1 && renderKey('backspace', row.length)}
+          {rowIndex === currentLayout.length - 1 && renderKey('backspace', row.length)}
         </View>
       ))}
 
@@ -156,6 +186,13 @@ const styles = StyleSheet.create({
   backspaceKey: {
     minWidth: 40,
     paddingHorizontal: 8,
+  },
+  shiftKey: {
+    minWidth: 50,
+    paddingHorizontal: 10,
+  },
+  shiftKeyActive: {
+    backgroundColor: '#4CAF50',
   },
   spaceKey: {
     flex: 1,
