@@ -6,8 +6,8 @@ const fs = require('fs');
 const path = require('path');
 
 function convertCsvToJson() {
-  const csvPath = path.join(__dirname, '../data/korean_words.csv');
-  const jsonPath = path.join(__dirname, '../TypeKorean/data/korean_words.json');
+  const csvPath = path.join(__dirname, '../data/common_words.csv');
+  const jsonPath = path.join(__dirname, '../TypeKorean/data/common_words.json');
 
   console.log('Reading CSV file...');
   const csvContent = fs.readFileSync(csvPath, 'utf-8');

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Read the CSV file
-const csvPath = path.join(__dirname, '../data/korean_words.csv');
+const csvPath = path.join(__dirname, '../data/common_words.csv');
 const csvContent = fs.readFileSync(csvPath, 'utf-8');
 const lines = csvContent.trim().split('\n');
 

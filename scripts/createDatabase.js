@@ -57,8 +57,8 @@ try {
 }
 
 async function createDatabase() {
-  const csvPath = path.join(__dirname, '../data/korean_words.csv');
-  const dbPath = path.join(__dirname, '../data/korean_words.db');
+  const csvPath = path.join(__dirname, '../data/common_words.csv');
+  const dbPath = path.join(__dirname, '../data/common_words.db');
 
   // Read CSV file
   console.log('Reading CSV file...');

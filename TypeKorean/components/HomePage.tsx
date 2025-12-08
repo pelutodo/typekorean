@@ -25,6 +25,11 @@ const VOCABULARY_SETS: VocabularySet[] = [
     name: 'Common Words',
     description: 'Essential Korean words for everyday use',
   },
+  {
+    id: 'letters',
+    name: 'Letters',
+    description: 'Korean letters and basic syllables',
+  },
 ];
 
 function HomePage({ onStartTyping }: HomePageProps) {

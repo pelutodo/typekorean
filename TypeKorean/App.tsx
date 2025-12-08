@@ -33,6 +33,7 @@ function App() {
 
 function AppContent() {
   const [currentPage, setCurrentPage] = useState<'home' | 'typing'>('typing');
+  const [currentVocabularySet, setCurrentVocabularySet] = useState<string>('common-words');
   const [text, setText] = useState('');
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [wordsBatch, setWordsBatch] = useState<Word[]>([]);
@@ -73,7 +74,7 @@ function AppContent() {
         console.log('Initializing database...');
         await initializeDatabase();
         console.log('Database initialized, loading words...');
-        const words = await getWordsBatch(BATCH_SIZE, 0);
+        const words = await getWordsBatch(BATCH_SIZE, 0, currentVocabularySet);
         console.log(`Loaded ${words.length} words:`, words);
         setWordsBatch(words);
         setIsLoading(false);
@@ -99,7 +100,7 @@ function AppContent() {
   const loadNextBatch = async (): Promise<Word[]> => {
     try {
       const nextOffset = wordsBatch.length;
-      const nextWords = await getWordsBatch(BATCH_SIZE, nextOffset);
+      const nextWords = await getWordsBatch(BATCH_SIZE, nextOffset, currentVocabularySet);
       if (nextWords.length > 0) {
         setWordsBatch(prev => [...prev, ...nextWords]);
       }
@@ -191,8 +192,15 @@ function AppContent() {
   };
 
   const handleStartTyping = (vocabularySetId?: string) => {
+    if (vocabularySetId) {
+      setCurrentVocabularySet(vocabularySetId);
+    }
     setCurrentPage('typing');
-    // TODO: Use vocabularySetId to filter/load specific vocabulary set
+    // Reset state when switching vocabulary sets
+    setText('');
+    setCurrentWordIndex(0);
+    setWordsBatch([]);
+    setIsLoading(true);
   };
 
   // Home page component

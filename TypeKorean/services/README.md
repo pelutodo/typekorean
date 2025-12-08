@@ -9,7 +9,7 @@ The database service implements an auto-seeding strategy that ensures the databa
 1. **Initialization**: When the app starts, `initializeDatabase()` is called
 2. **Table Creation**: Creates the `words` table if it doesn't exist
 3. **Empty Check**: Checks if the `words` table is empty
-4. **Auto-Seed**: If empty, seeds the database from the bundled JSON file (`korean_words.json`)
+4. **Auto-Seed**: If empty, seeds the database from the bundled JSON file (`common_words.json`)
 5. **Skip if Populated**: If data exists, skips seeding (only seeds once)
 
 ## Benefits
@@ -56,6 +56,6 @@ const word = await getRandomWord();
 ## Data Source
 
 The Korean words are stored in:
-- **Source**: `data/korean_words.csv` (514 words)
-- **Bundled**: `TypeKorean/data/korean_words.json` (converted for app bundling)
+- **Source**: `data/common_words.csv` (514 words)
+- **Bundled**: `TypeKorean/data/common_words.json` (converted for app bundling)
 

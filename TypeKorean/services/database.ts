@@ -15,10 +15,17 @@
 import { open } from 'react-native-quick-sqlite';
 
 // Database version - increment when schema changes
-const DB_VERSION = 2;
+const DB_VERSION = 3;
 
 // Import JSON data for seeding
-const koreanWordsData = require('../data/korean_words.json') as Array<{
+const commonWordsData = require('../data/common_words.json') as Array<{
+  korean: string;
+  english: string;
+  emoji?: string;
+  imageUrl?: string;
+}>;
+
+const lettersData = require('../data/letters.json') as Array<{
   korean: string;
   english: string;
   emoji?: string;
@@ -31,6 +38,7 @@ export interface Word {
   english: string;
   emoji?: string;
   imageUrl?: string;
+  vocabulary_set?: string;
 }
 
 let db: ReturnType<typeof open> | null = null;
@@ -42,7 +50,7 @@ let db: ReturnType<typeof open> | null = null;
 export async function initializeDatabase(): Promise<void> {
   try {
     // Open database
-    db = open({ name: 'korean_words.db', location: 'default' });
+        db = open({ name: 'common_words.db', location: 'default' });
     
     await createVersionTable();
     await migrateDatabase();
@@ -146,7 +154,7 @@ async function migrateDatabase(): Promise<void> {
       console.log('Updating existing words with emoji data...');
       db.execute('BEGIN TRANSACTION');
       try {
-        for (const wordData of koreanWordsData) {
+        for (const wordData of commonWordsData) {
           db.execute(
             'UPDATE words SET emoji = ?, imageUrl = ? WHERE korean = ? AND english = ?',
             [wordData.emoji || '', wordData.imageUrl || '', wordData.korean, wordData.english]
@@ -161,6 +169,38 @@ async function migrateDatabase(): Promise<void> {
 
       setVersion(2);
       console.log('Migration to version 2 completed');
+    } catch (error) {
+      console.error('Error during migration:', error);
+      throw error;
+    }
+  }
+
+  // Migration from version 2 to 3: Add vocabulary_set column
+  if (currentVersion < 3) {
+    console.log('Migrating database from version 2 to 3...');
+    try {
+      // Check if vocabulary_set column already exists
+      const tableInfo = db.execute('PRAGMA table_info(words)');
+      let hasVocabularySet = false;
+
+      if (tableInfo.rows) {
+        for (let i = 0; i < tableInfo.rows.length; i++) {
+          const column = tableInfo.rows.item(i);
+          if (column.name === 'vocabulary_set') hasVocabularySet = true;
+        }
+      }
+
+      if (!hasVocabularySet) {
+        db.execute('ALTER TABLE words ADD COLUMN vocabulary_set TEXT DEFAULT "common-words"');
+        console.log('Added vocabulary_set column');
+        
+        // Update existing rows to have vocabulary_set = 'common-words'
+        db.execute('UPDATE words SET vocabulary_set = "common-words" WHERE vocabulary_set IS NULL');
+        console.log('Updated existing words with vocabulary_set');
+      }
+
+      setVersion(3);
+      console.log('Migration to version 3 completed');
     } catch (error) {
       console.error('Error during migration:', error);
       throw error;
@@ -184,6 +224,7 @@ async function createTables(): Promise<void> {
       english TEXT NOT NULL,
       emoji TEXT,
       imageUrl TEXT,
+      vocabulary_set TEXT DEFAULT "common-words",
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     )
   `);
@@ -229,25 +270,38 @@ async function seedDatabase(): Promise<void> {
     throw new Error('Database not initialized');
   }
 
-  console.log(`Seeding ${koreanWordsData.length} words...`);
+  console.log(`Seeding ${commonWordsData.length} common words and ${lettersData.length} letters...`);
 
   // Use transaction for better performance
   db.execute('BEGIN TRANSACTION');
 
   try {
-    const insertQuery = 'INSERT INTO words (korean, english, emoji, imageUrl) VALUES (?, ?, ?, ?)';
+    const insertQuery = 'INSERT INTO words (korean, english, emoji, imageUrl, vocabulary_set) VALUES (?, ?, ?, ?, ?)';
     
-    for (const word of koreanWordsData) {
+    // Seed common words
+    for (const word of commonWordsData) {
       db.execute(insertQuery, [
         word.korean,
         word.english,
         word.emoji || '',
         word.imageUrl || '',
+        'common-words',
+      ]);
+    }
+
+    // Seed letters
+    for (const word of lettersData) {
+      db.execute(insertQuery, [
+        word.korean,
+        word.english,
+        word.emoji || '',
+        word.imageUrl || '',
+        'letters',
       ]);
     }
 
     db.execute('COMMIT');
-    console.log(`Successfully seeded ${koreanWordsData.length} words`);
+    console.log(`Successfully seeded ${commonWordsData.length} common words and ${lettersData.length} letters`);
   } catch (error) {
     db.execute('ROLLBACK');
     console.error('Error seeding database:', error);
@@ -365,9 +419,16 @@ export async function getWordCount(): Promise<number> {
  * @param limit - Number of words to fetch
  * @param offset - Number of words to skip
  */
+/**
+ * Get a batch of words from the database
+ * @param limit - Number of words to fetch
+ * @param offset - Number of words to skip
+ * @param vocabularySet - Vocabulary set to filter by (default: 'common-words')
+ */
 export async function getWordsBatch(
   limit: number = 10,
   offset: number = 0,
+  vocabularySet: string = 'common-words',
 ): Promise<Word[]> {
   if (!db) {
     throw new Error('Database not initialized');
@@ -375,8 +436,8 @@ export async function getWordsBatch(
 
   try {
     const result = db.execute(
-      'SELECT * FROM words ORDER BY id LIMIT ? OFFSET ?',
-      [limit, offset],
+      'SELECT * FROM words WHERE vocabulary_set = ? ORDER BY id LIMIT ? OFFSET ?',
+      [vocabularySet, limit, offset],
     );
     const words: Word[] = [];
 
@@ -389,6 +450,7 @@ export async function getWordsBatch(
           english: row.english as string,
           emoji: row.emoji as string | undefined,
           imageUrl: row.imageUrl as string | undefined,
+          vocabulary_set: row.vocabulary_set as string | undefined,
         });
       }
     }

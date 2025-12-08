@@ -11,7 +11,7 @@ There are several ways to reset the database:
    ```
    ~/Library/Developer/CoreSimulator/Devices/[DEVICE_ID]/data/Containers/Data/Application/[APP_ID]/Documents/
    ```
-3. Find and delete `korean_words.db`
+3. Find and delete `common_words.db`
 4. Restart the app - it will automatically recreate and seed the database
 
 ### Option 2: Use the Reset Function (Programmatic)
