@@ -1,746 +1,751 @@
-[
-  {
-    "korean": "ㄱ",
-    "english": "g/k",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㄴ",
-    "english": "n",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㄷ",
-    "english": "d/t",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㄹ",
-    "english": "r/l",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅁ",
-    "english": "m",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅂ",
-    "english": "b/p",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅅ",
-    "english": "s",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅇ",
-    "english": "ng (silent)",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅈ",
-    "english": "j/ch",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅊ",
-    "english": "ch",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅋ",
-    "english": "k",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅌ",
-    "english": "t",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅍ",
-    "english": "p",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅎ",
-    "english": "h",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㄲ",
-    "english": "gg/kk",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㄸ",
-    "english": "dd/tt",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅃ",
-    "english": "bb/pp",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅆ",
-    "english": "ss",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅉ",
-    "english": "jj",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅏ",
-    "english": "a",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅐ",
-    "english": "ae",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅑ",
-    "english": "ya",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅒ",
-    "english": "yae",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅓ",
-    "english": "eo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅔ",
-    "english": "e",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅕ",
-    "english": "yeo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅖ",
-    "english": "ye",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅗ",
-    "english": "o",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅘ",
-    "english": "wa",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅙ",
-    "english": "wae",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅚ",
-    "english": "oe",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅛ",
-    "english": "yo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅜ",
-    "english": "u",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅝ",
-    "english": "wo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅞ",
-    "english": "we",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅟ",
-    "english": "wi",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅠ",
-    "english": "yu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅡ",
-    "english": "eu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅢ",
-    "english": "ui",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "ㅣ",
-    "english": "i",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "가",
-    "english": "ga",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "나",
-    "english": "na",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "다",
-    "english": "da",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "라",
-    "english": "ra",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "마",
-    "english": "ma",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "바",
-    "english": "ba",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "사",
-    "english": "sa",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "아",
-    "english": "a",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "자",
-    "english": "ja",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "차",
-    "english": "cha",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "카",
-    "english": "ka",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "타",
-    "english": "ta",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "파",
-    "english": "pa",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "하",
-    "english": "ha",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "거",
-    "english": "geo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "너",
-    "english": "neo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "더",
-    "english": "deo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "러",
-    "english": "reo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "머",
-    "english": "meo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "버",
-    "english": "beo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "서",
-    "english": "seo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "어",
-    "english": "eo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "저",
-    "english": "jeo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "처",
-    "english": "cheo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "커",
-    "english": "keo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "터",
-    "english": "teo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "퍼",
-    "english": "peo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "허",
-    "english": "heo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "고",
-    "english": "go",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "노",
-    "english": "no",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "도",
-    "english": "do",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "로",
-    "english": "ro",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "모",
-    "english": "mo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "보",
-    "english": "bo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "소",
-    "english": "so",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "오",
-    "english": "o",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "조",
-    "english": "jo",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "초",
-    "english": "cho",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "코",
-    "english": "ko",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "토",
-    "english": "to",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "포",
-    "english": "po",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "호",
-    "english": "ho",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "구",
-    "english": "gu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "누",
-    "english": "nu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "두",
-    "english": "du",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "루",
-    "english": "ru",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "무",
-    "english": "mu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "부",
-    "english": "bu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "수",
-    "english": "su",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "우",
-    "english": "u",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "주",
-    "english": "ju",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "추",
-    "english": "chu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "쿠",
-    "english": "ku",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "투",
-    "english": "tu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "푸",
-    "english": "pu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "후",
-    "english": "hu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "그",
-    "english": "geu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "느",
-    "english": "neu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "드",
-    "english": "deu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "르",
-    "english": "reu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "므",
-    "english": "meu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "브",
-    "english": "beu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "스",
-    "english": "seu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "으",
-    "english": "eu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "즈",
-    "english": "jeu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "츠",
-    "english": "cheu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "크",
-    "english": "keu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "트",
-    "english": "teu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "프",
-    "english": "peu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "흐",
-    "english": "heu",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "기",
-    "english": "gi",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "니",
-    "english": "ni",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "디",
-    "english": "di",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "리",
-    "english": "ri",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "미",
-    "english": "mi",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "비",
-    "english": "bi",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "시",
-    "english": "si",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "이",
-    "english": "i",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "지",
-    "english": "ji",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "치",
-    "english": "chi",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "키",
-    "english": "ki",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "티",
-    "english": "ti",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "피",
-    "english": "pi",
-    "emoji": "",
-    "imageUrl": ""
-  },
-  {
-    "korean": "히",
-    "english": "hi",
-    "emoji": "",
-    "imageUrl": ""
-  }
-]
+{
+  "type": "word_set",
+  "displayName": "Letters",
+  "words": [
+    {
+      "korean": "ㄱ",
+      "english": "g/k",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㄴ",
+      "english": "n",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㄷ",
+      "english": "d/t",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㄹ",
+      "english": "r/l",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅁ",
+      "english": "m",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅂ",
+      "english": "b/p",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅅ",
+      "english": "s",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅇ",
+      "english": "ng (silent)",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅈ",
+      "english": "j/ch",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅊ",
+      "english": "ch",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅋ",
+      "english": "k",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅌ",
+      "english": "t",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅍ",
+      "english": "p",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅎ",
+      "english": "h",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㄲ",
+      "english": "gg/kk",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㄸ",
+      "english": "dd/tt",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅃ",
+      "english": "bb/pp",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅆ",
+      "english": "ss",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅉ",
+      "english": "jj",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅏ",
+      "english": "a",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅐ",
+      "english": "ae",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅑ",
+      "english": "ya",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅒ",
+      "english": "yae",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅓ",
+      "english": "eo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅔ",
+      "english": "e",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅕ",
+      "english": "yeo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅖ",
+      "english": "ye",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅗ",
+      "english": "o",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅘ",
+      "english": "wa",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅙ",
+      "english": "wae",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅚ",
+      "english": "oe",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅛ",
+      "english": "yo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅜ",
+      "english": "u",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅝ",
+      "english": "wo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅞ",
+      "english": "we",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅟ",
+      "english": "wi",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅠ",
+      "english": "yu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅡ",
+      "english": "eu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅢ",
+      "english": "ui",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "ㅣ",
+      "english": "i",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "가",
+      "english": "ga",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "나",
+      "english": "na",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "다",
+      "english": "da",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "라",
+      "english": "ra",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "마",
+      "english": "ma",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "바",
+      "english": "ba",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "사",
+      "english": "sa",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "아",
+      "english": "a",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "자",
+      "english": "ja",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "차",
+      "english": "cha",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "카",
+      "english": "ka",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "타",
+      "english": "ta",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "파",
+      "english": "pa",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "하",
+      "english": "ha",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "거",
+      "english": "geo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "너",
+      "english": "neo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "더",
+      "english": "deo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "러",
+      "english": "reo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "머",
+      "english": "meo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "버",
+      "english": "beo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "서",
+      "english": "seo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "어",
+      "english": "eo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "저",
+      "english": "jeo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "처",
+      "english": "cheo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "커",
+      "english": "keo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "터",
+      "english": "teo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "퍼",
+      "english": "peo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "허",
+      "english": "heo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "고",
+      "english": "go",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "노",
+      "english": "no",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "도",
+      "english": "do",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "로",
+      "english": "ro",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "모",
+      "english": "mo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "보",
+      "english": "bo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "소",
+      "english": "so",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "오",
+      "english": "o",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "조",
+      "english": "jo",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "초",
+      "english": "cho",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "코",
+      "english": "ko",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "토",
+      "english": "to",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "포",
+      "english": "po",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "호",
+      "english": "ho",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "구",
+      "english": "gu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "누",
+      "english": "nu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "두",
+      "english": "du",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "루",
+      "english": "ru",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "무",
+      "english": "mu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "부",
+      "english": "bu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "수",
+      "english": "su",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "우",
+      "english": "u",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "주",
+      "english": "ju",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "추",
+      "english": "chu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "쿠",
+      "english": "ku",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "투",
+      "english": "tu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "푸",
+      "english": "pu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "후",
+      "english": "hu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "그",
+      "english": "geu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "느",
+      "english": "neu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "드",
+      "english": "deu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "르",
+      "english": "reu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "므",
+      "english": "meu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "브",
+      "english": "beu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "스",
+      "english": "seu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "으",
+      "english": "eu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "즈",
+      "english": "jeu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "츠",
+      "english": "cheu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "크",
+      "english": "keu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "트",
+      "english": "teu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "프",
+      "english": "peu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "흐",
+      "english": "heu",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "기",
+      "english": "gi",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "니",
+      "english": "ni",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "디",
+      "english": "di",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "리",
+      "english": "ri",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "미",
+      "english": "mi",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "비",
+      "english": "bi",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "시",
+      "english": "si",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "이",
+      "english": "i",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "지",
+      "english": "ji",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "치",
+      "english": "chi",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "키",
+      "english": "ki",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "티",
+      "english": "ti",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "피",
+      "english": "pi",
+      "emoji": "",
+      "imageUrl": ""
+    },
+    {
+      "korean": "히",
+      "english": "hi",
+      "emoji": "",
+      "imageUrl": ""
+    }
+  ],
+  "name": "letters"
+}

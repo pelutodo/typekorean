@@ -32,12 +32,13 @@ function App() {
 }
 
 function AppContent() {
-  const [currentPage, setCurrentPage] = useState<'home' | 'typing'>('typing');
-  const [currentVocabularySet, setCurrentVocabularySet] = useState<string>('common-words');
+  const [currentPage, setCurrentPage] = useState<'home' | 'typing'>('home');
+  const [currentVocabularySet, setCurrentVocabularySet] = useState<string>('');
   const [text, setText] = useState('');
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [wordsBatch, setWordsBatch] = useState<Word[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [reloadTrigger, setReloadTrigger] = useState(0); // Force reload trigger
   const insets = useSafeAreaInsets();
 
   const BATCH_SIZE = 10;
@@ -67,28 +68,65 @@ function AppContent() {
     }
   }, [currentWord?.korean, isLoading]);
 
-  // Initialize database and load first batch
+  // Initialize database (only once)
   useEffect(() => {
     async function init() {
       try {
         console.log('Initializing database...');
         await initializeDatabase();
-        console.log('Database initialized, loading words...');
-        const words = await getWordsBatch(BATCH_SIZE, 0, currentVocabularySet);
-        console.log(`Loaded ${words.length} words:`, words);
-        setWordsBatch(words);
-        setIsLoading(false);
+        console.log('Database initialized');
         
         // Initialize TTS
         await initializeTTS();
       } catch (error) {
         console.error('Error initializing app:', error);
         console.error('Error details:', JSON.stringify(error, null, 2));
-        setIsLoading(false);
       }
     }
     init();
   }, []);
+
+  // Load words when vocabulary set changes or when switching to typing page
+  useEffect(() => {
+    async function loadWords() {
+      console.log(`[useEffect] currentPage: ${currentPage}, currentVocabularySet: ${currentVocabularySet}`);
+      
+      if (!currentVocabularySet) {
+        console.log('[useEffect] No vocabulary set selected, skipping load');
+        return;
+      }
+      
+      // Only load if we're on the typing page
+      if (currentPage !== 'typing') {
+        console.log('[useEffect] Not on typing page, skipping word load');
+        return;
+      }
+      
+      try {
+        console.log(`[useEffect] Loading words for vocabulary set: ${currentVocabularySet}`);
+        const words = await getWordsBatch(BATCH_SIZE, 0, currentVocabularySet);
+        console.log(`[useEffect] Loaded ${words.length} words for vocabulary set "${currentVocabularySet}"`);
+        
+        if (words.length === 0) {
+          console.warn(`[useEffect] No words found for vocabulary set "${currentVocabularySet}"`);
+        }
+        
+        setWordsBatch(words);
+        setCurrentWordIndex(0);
+        setText('');
+        setIsLoading(false);
+      } catch (error) {
+        console.error('[useEffect] Error loading words:', error);
+        setWordsBatch([]);
+        setIsLoading(false);
+      }
+    }
+    
+    // Only load if we have both the page and vocabulary set
+    if (currentPage === 'typing' && currentVocabularySet) {
+      loadWords();
+    }
+  }, [currentVocabularySet, currentPage, reloadTrigger]);
 
   const handleSpeak = () => {
     if (currentWord?.korean) {
@@ -192,14 +230,24 @@ function AppContent() {
   };
 
   const handleStartTyping = (vocabularySetId?: string) => {
-    if (vocabularySetId) {
-      setCurrentVocabularySet(vocabularySetId);
+    if (!vocabularySetId) {
+      console.error('[handleStartTyping] No vocabulary set ID provided');
+      return;
     }
+    
+    console.log(`[handleStartTyping] Starting typing with vocabulary set: ${vocabularySetId}`);
+    
+    // Set vocabulary set and page together
+    setCurrentVocabularySet(vocabularySetId);
     setCurrentPage('typing');
-    // Reset state when switching vocabulary sets
-    setText('');
-    setCurrentWordIndex(0);
+    
+    // Force reload by incrementing trigger
+    setReloadTrigger(prev => prev + 1);
+    
+    // Reset state
     setWordsBatch([]);
+    setCurrentWordIndex(0);
+    setText('');
     setIsLoading(true);
   };
 
@@ -232,6 +280,8 @@ function AppContent() {
           <View style={styles.swipeArea}>
           {isLoading ? (
             <Text style={styles.loadingText}>Loading...</Text>
+          ) : wordsBatch.length === 0 ? (
+            <Text style={styles.loadingText}>No words available. Database may need to be reset.</Text>
           ) : currentWord ? (
             <>
               <Text style={styles.emoji}>

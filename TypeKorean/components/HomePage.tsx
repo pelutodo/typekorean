@@ -9,17 +9,12 @@ import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, ScrollView } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-interface VocabularySet {
-  id: string;
-  name: string;
-  description?: string;
-}
-
 interface HomePageProps {
-  onStartTyping: (vocabularySetId?: string) => void;
+  onStartTyping: (vocabularySetId: string) => void;
 }
 
-const VOCABULARY_SETS: VocabularySet[] = [
+// Hardcoded vocabulary sets
+const VOCABULARY_SETS = [
   {
     id: 'common-words',
     name: 'Common Words',

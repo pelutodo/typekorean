@@ -1,15 +1,17 @@
 /**
  * Convert Korean words CSV to JSON for bundling with the app
+ * Outputs in word_set schema: { type: "word_set", id: string, displayName: string, words: array }
  */
 
 const fs = require('fs');
 const path = require('path');
 
-function convertCsvToJson() {
-  const csvPath = path.join(__dirname, '../data/common_words.csv');
-  const jsonPath = path.join(__dirname, '../TypeKorean/data/common_words.json');
+function convertCsvToJson(csvFileName, setName, displayName) {
+  const csvPath = path.join(__dirname, '../data', csvFileName);
+  const jsonFileName = csvFileName.replace('.csv', '.json');
+  const jsonPath = path.join(__dirname, '../TypeKorean/data', jsonFileName);
 
-  console.log('Reading CSV file...');
+  console.log(`Reading CSV file: ${csvFileName}...`);
   const csvContent = fs.readFileSync(csvPath, 'utf-8');
   const lines = csvContent.trim().split('\n');
   
@@ -39,12 +41,22 @@ function convertCsvToJson() {
     fs.mkdirSync(jsonDir, { recursive: true });
   }
 
-  // Write JSON file
-  fs.writeFileSync(jsonPath, JSON.stringify(words, null, 2), 'utf-8');
+  // Write JSON file with word_set schema
+  const wordSet = {
+    type: 'word_set',
+    name: setName,
+    displayName: displayName,
+    words: words
+  };
+  
+  fs.writeFileSync(jsonPath, JSON.stringify(wordSet, null, 2), 'utf-8');
   
   console.log(`✅ Converted ${words.length} words to JSON`);
   console.log(`   Output: ${jsonPath}`);
+  console.log(`   Schema: word_set (name: ${setName}, displayName: ${displayName})`);
 }
 
-convertCsvToJson();
+// Convert both files
+convertCsvToJson('common_words.csv', 'common-words', 'Common Words');
+convertCsvToJson('letters.csv', 'letters', 'Letters');
 
